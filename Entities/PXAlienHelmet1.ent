@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXAlienHelmet1"/>
+	</state>
+	<mesh_description id="PXAlienHelmet1">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXAlienHelmet1_PXAlienHelmet1.m.hgm"/>
+			<material file="Materials/PXAlienHelmet1_PXAlienHelmet1.mtl"/>
+			<bsphere value="-0.082,0.000,61.429,130.939"/>
+			<box min="-87.798,-81.978,-38.571" max="87.635,81.978,161.429"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

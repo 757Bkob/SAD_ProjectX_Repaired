@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="GalacticHelmetPX"/>
+	</state>
+	<mesh_description id="GalacticHelmetPX">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/GalacticHelmetPX_GalacticHelmetPX.m.hgm"/>
+			<material file="Materials/GalacticHelmetPX_GalacticHelmetPX.mtl"/>
+			<bsphere value="-11.919,0.000,102.926,182.637"/>
+			<box min="-164.795,-121.046,-38.696" max="140.956,121.046,244.548"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

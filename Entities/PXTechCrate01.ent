@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXTechCrate01"/>
+	</state>
+	<mesh_description id="PXTechCrate01">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXTechCrate01_PXTechCrate01.m.hgm"/>
+			<material file="Materials/PXTechCrate01_PXTechCrate01.mtl"/>
+			<bsphere value="1.590,0.652,92.950,200.899"/>
+			<box min="-180.477,-90.921,0.886" max="183.657,92.226,185.015"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="-176.074,100.000,-0.114;-176.074,-100.000,199.886;-176.074,-100.000,-0.114"/>
+		<surf type="collision" points="176.074,-100.000,199.886;-176.074,-100.000,-0.114;-176.074,-100.000,199.886"/>
+		<surf type="collision" points="176.074,-100.000,-0.114;-176.074,100.000,-0.114;-176.074,-100.000,-0.114"/>
+		<surf type="collision" points="-176.074,-100.000,199.886;-176.074,100.000,-0.114;-176.074,100.000,199.886"/>
+		<surf type="collision" points="176.074,100.000,-0.114;-176.074,100.000,199.886;-176.074,100.000,-0.114"/>
+		<surf type="collision" points="-176.074,100.000,199.886;176.074,100.000,199.886;-176.074,-100.000,199.886"/>
+		<surf type="collision" points="-176.074,-100.000,-0.114;176.074,-100.000,199.886;176.074,-100.000,-0.114"/>
+		<surf type="collision" points="-176.074,-100.000,199.886;176.074,100.000,199.886;176.074,-100.000,199.886"/>
+		<surf type="collision" points="176.074,100.000,199.886;176.074,-100.000,-0.114;176.074,-100.000,199.886"/>
+		<surf type="collision" points="176.074,-100.000,-0.114;176.074,100.000,-0.114;-176.074,100.000,-0.114"/>
+		<surf type="collision" points="-176.074,100.000,199.886;176.074,100.000,-0.114;176.074,100.000,199.886"/>
+		<surf type="collision" points="176.074,-100.000,-0.114;176.074,100.000,199.886;176.074,100.000,-0.114"/>
+		<surf_hash type="collision" value="4112581155"/>
+	</mesh_description>
+</entity>

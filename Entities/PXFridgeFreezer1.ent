@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXFridgeFreezer1"/>
+	</state>
+	<mesh_description id="PXFridgeFreezer1">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXFridgeFreezer1_PXFridgeFreezer1.m.hgm"/>
+			<material file="Materials/PXFridgeFreezer1_PXFridgeFreezer1.mtl"/>
+			<bsphere value="-2.404,1.280,96.360,127.934"/>
+			<box min="-64.471,-63.920,-0.213" max="59.663,66.481,192.932"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="-100.000,100.000,5.389;-100.000,-100.000,205.389;-100.000,-100.000,5.389"/>
+		<surf type="collision" points="100.000,-100.000,205.389;-100.000,-100.000,5.389;-100.000,-100.000,205.389"/>
+		<surf type="collision" points="100.000,-100.000,5.389;-100.000,100.000,5.389;-100.000,-100.000,5.389"/>
+		<surf type="collision" points="-100.000,-100.000,205.389;-100.000,100.000,5.389;-100.000,100.000,205.389"/>
+		<surf type="collision" points="100.000,100.000,5.389;-100.000,100.000,205.389;-100.000,100.000,5.389"/>
+		<surf type="collision" points="-100.000,100.000,205.389;100.000,100.000,205.389;-100.000,-100.000,205.389"/>
+		<surf type="collision" points="-100.000,-100.000,5.389;100.000,-100.000,205.389;100.000,-100.000,5.389"/>
+		<surf type="collision" points="100.000,100.000,205.389;100.000,-100.000,5.389;100.000,-100.000,205.389"/>
+		<surf type="collision" points="-100.000,-100.000,205.389;100.000,100.000,205.389;100.000,-100.000,205.389"/>
+		<surf type="collision" points="100.000,-100.000,5.389;100.000,100.000,5.389;-100.000,100.000,5.389"/>
+		<surf type="collision" points="-100.000,100.000,205.389;100.000,100.000,5.389;100.000,100.000,205.389"/>
+		<surf type="collision" points="100.000,-100.000,5.389;100.000,100.000,205.389;100.000,100.000,5.389"/>
+		<surf_hash type="collision" value="3784652525"/>
+	</mesh_description>
+</entity>

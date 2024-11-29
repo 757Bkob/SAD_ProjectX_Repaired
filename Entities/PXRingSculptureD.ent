@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXRingSculptureD"/>
+	</state>
+	<mesh_description id="PXRingSculptureD">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXRingSculptureD_PXRingSculptureD.m.hgm"/>
+			<material file="Materials/PXRingSculptureD_PXRingSculptureD.mtl"/>
+			<bsphere value="5.214,14.369,187.383,345.369"/>
+			<box min="-133.192,-255.982,-12.291" max="143.621,284.721,387.058"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="100.000,-215.787,208.963;-100.000,-215.787,8.963;-100.000,-215.787,208.963"/>
+		<surf type="collision" points="-100.000,215.787,8.963;-100.000,-215.787,208.963;-100.000,-215.787,8.963"/>
+		<surf type="collision" points="100.000,-215.787,8.963;-100.000,215.787,8.963;-100.000,-215.787,8.963"/>
+		<surf type="collision" points="-100.000,-215.787,208.963;-100.000,215.787,8.963;-100.000,215.787,208.963"/>
+		<surf type="collision" points="-100.000,215.787,208.963;100.000,215.787,208.963;-100.000,-215.787,208.963"/>
+		<surf type="collision" points="100.000,215.787,8.963;-100.000,215.787,208.963;-100.000,215.787,8.963"/>
+		<surf type="collision" points="-100.000,-215.787,8.963;100.000,-215.787,208.963;100.000,-215.787,8.963"/>
+		<surf type="collision" points="100.000,215.787,208.963;100.000,-215.787,8.963;100.000,-215.787,208.963"/>
+		<surf type="collision" points="-100.000,-215.787,208.963;100.000,215.787,208.963;100.000,-215.787,208.963"/>
+		<surf type="collision" points="100.000,-215.787,8.963;100.000,215.787,8.963;-100.000,215.787,8.963"/>
+		<surf type="collision" points="100.000,-215.787,8.963;100.000,215.787,208.963;100.000,215.787,8.963"/>
+		<surf type="collision" points="-100.000,215.787,208.963;100.000,215.787,8.963;100.000,215.787,208.963"/>
+		<surf_hash type="collision" value="2812671942"/>
+	</mesh_description>
+</entity>

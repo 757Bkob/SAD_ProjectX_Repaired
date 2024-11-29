@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="PXAlienPlasmaRifle1">
+	<state id="idle">
+		<mesh_ref ref="PXAlienPlasmaRifle1"/>
+	</state>
+	<mesh_description id="PXAlienPlasmaRifle1">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXAlienPlasmaRifle1_PXAlienPlasmaRifle1.m.hgm"/>
+			<material file="Materials/PXAlienPlasmaRifle1_PXAlienPlasmaRifle1.mtl"/>
+			<bsphere value="17.769,0.225,10.745,61.470"/>
+			<box min="-42.904,-3.735,-5.883" max="78.441,4.185,27.374"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/untitled.fbx"/>
+		</lod>
+		<surf type="collision" points="-38.820,10.916,4.545;-38.820,-10.916,20.052;-38.820,-10.916,4.545"/>
+		<surf type="collision" points="-38.820,-10.916,20.052;-38.820,10.916,4.545;-38.820,10.916,20.052"/>
+		<surf type="collision" points="77.943,-10.916,4.545;-38.820,10.916,4.545;-38.820,-10.916,4.545"/>
+		<surf type="collision" points="77.943,-10.916,20.052;-38.820,-10.916,4.545;-38.820,-10.916,20.052"/>
+		<surf type="collision" points="-38.820,-10.916,4.545;77.943,-10.916,20.052;77.943,-10.916,4.545"/>
+		<surf type="collision" points="-38.820,-10.916,20.052;77.943,10.916,20.052;77.943,-10.916,20.052"/>
+		<surf type="collision" points="77.943,10.916,20.052;77.943,-10.916,4.545;77.943,-10.916,20.052"/>
+		<surf type="collision" points="-38.820,10.916,20.052;77.943,10.916,20.052;-38.820,-10.916,20.052"/>
+		<surf type="collision" points="77.943,10.916,4.545;-38.820,10.916,20.052;-38.820,10.916,4.545"/>
+		<surf type="collision" points="77.943,-10.916,4.545;77.943,10.916,4.545;-38.820,10.916,4.545"/>
+		<surf type="collision" points="-38.820,10.916,20.052;77.943,10.916,4.545;77.943,10.916,20.052"/>
+		<surf type="collision" points="77.943,-10.916,4.545;77.943,10.916,20.052;77.943,10.916,4.545"/>
+		<surf_hash type="collision" value="594323962"/>
+	</mesh_description>
+</entity>

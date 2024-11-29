@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXMedBoxContainer"/>
+	</state>
+	<mesh_description id="PXMedBoxContainer">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXMedBoxContainer_PXMedBoxContainer.m.hgm"/>
+			<material file="Materials/PXMedBoxContainer_PXMedBoxContainer.mtl"/>
+			<bsphere value="-31.921,2.452,117.011,123.122"/>
+			<box min="-53.052,-67.840,1.097" max="-10.791,72.743,232.924"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="49.091,-68.661,3.700;86.073,-68.661,203.700;86.073,-68.661,3.700"/>
+		<surf type="collision" points="86.073,-68.661,3.700;49.091,68.661,3.700;49.091,-68.661,3.700"/>
+		<surf type="collision" points="49.091,68.661,3.700;49.091,-68.661,203.700;49.091,-68.661,3.700"/>
+		<surf type="collision" points="86.073,-68.661,203.700;49.091,-68.661,3.700;49.091,-68.661,203.700"/>
+		<surf type="collision" points="86.073,68.661,203.700;86.073,-68.661,3.700;86.073,-68.661,203.700"/>
+		<surf type="collision" points="49.091,-68.661,203.700;86.073,68.661,203.700;86.073,-68.661,203.700"/>
+		<surf type="collision" points="86.073,-68.661,3.700;86.073,68.661,3.700;49.091,68.661,3.700"/>
+		<surf type="collision" points="86.073,68.661,3.700;49.091,68.661,203.700;49.091,68.661,3.700"/>
+		<surf type="collision" points="49.091,-68.661,203.700;49.091,68.661,3.700;49.091,68.661,203.700"/>
+		<surf type="collision" points="49.091,68.661,203.700;86.073,68.661,3.700;86.073,68.661,203.700"/>
+		<surf type="collision" points="86.073,-68.661,3.700;86.073,68.661,203.700;86.073,68.661,3.700"/>
+		<surf type="collision" points="49.091,68.661,203.700;86.073,68.661,203.700;49.091,-68.661,203.700"/>
+		<surf_hash type="collision" value="2976335862"/>
+	</mesh_description>
+</entity>

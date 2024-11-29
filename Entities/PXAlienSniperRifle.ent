@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXAlienSniperRifle"/>
+	</state>
+	<mesh_description id="PXAlienSniperRifle">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXAlienSniperRifle_PXAlienSniperRifle.m.hgm"/>
+			<material file="Materials/PXAlienSniperRifle_PXAlienSniperRifle.mtl"/>
+			<bsphere value="-0.001,30.174,9.549,61.618"/>
+			<box min="-3.883,-31.139,-7.252" max="3.881,91.486,26.350"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/untitled.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

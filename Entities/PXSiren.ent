@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="PXSiren">
+	<state id="idle">
+		<mesh_ref ref="PXSiren"/>
+	</state>
+	<mesh_description id="PXSiren">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXSiren_PXSiren.m.hgm"/>
+			<material file="Materials/PXSiren_PXSiren.mtl"/>
+			<bsphere value="-30.216,0.000,415.848,440.015"/>
+			<box min="-169.194,-165.789,0.000" max="108.762,165.789,831.696"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="100.000,-100.000,-8.558;-100.000,100.000,-8.558;-100.000,-100.000,-8.558"/>
+		<surf type="collision" points="-100.000,100.000,-8.558;-100.000,-100.000,774.953;-100.000,-100.000,-8.558"/>
+		<surf type="collision" points="100.000,-100.000,774.953;-100.000,-100.000,-8.558;-100.000,-100.000,774.953"/>
+		<surf type="collision" points="100.000,100.000,-8.558;-100.000,100.000,774.953;-100.000,100.000,-8.558"/>
+		<surf type="collision" points="-100.000,-100.000,774.953;-100.000,100.000,-8.558;-100.000,100.000,774.953"/>
+		<surf type="collision" points="-100.000,100.000,774.953;100.000,100.000,774.953;-100.000,-100.000,774.953"/>
+		<surf type="collision" points="-100.000,-100.000,-8.558;100.000,-100.000,774.953;100.000,-100.000,-8.558"/>
+		<surf type="collision" points="100.000,100.000,774.953;100.000,-100.000,-8.558;100.000,-100.000,774.953"/>
+		<surf type="collision" points="-100.000,-100.000,774.953;100.000,100.000,774.953;100.000,-100.000,774.953"/>
+		<surf type="collision" points="100.000,-100.000,-8.558;100.000,100.000,-8.558;-100.000,100.000,-8.558"/>
+		<surf type="collision" points="100.000,-100.000,-8.558;100.000,100.000,774.953;100.000,100.000,-8.558"/>
+		<surf type="collision" points="-100.000,100.000,774.953;100.000,100.000,-8.558;100.000,100.000,774.953"/>
+		<surf_hash type="collision" value="652978111"/>
+	</mesh_description>
+</entity>

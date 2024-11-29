@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXNanoTechGun"/>
+	</state>
+	<mesh_description id="PXNanoTechGun">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXNanoTechGun_PXNanoTechGun.m.hgm"/>
+			<material file="Materials/PXNanoTechGun_PXNanoTechGun.mtl"/>
+			<bsphere value="7.369,-0.041,2.751,48.517"/>
+			<box min="-39.176,-21.406,-14.160" max="53.914,21.325,19.662"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

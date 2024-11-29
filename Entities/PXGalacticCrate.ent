@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXGalacticCrate"/>
+	</state>
+	<mesh_description id="PXGalacticCrate">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXGalacticCrate_PXGalacticCrate.m.hgm"/>
+			<material file="Materials/PXGalacticCrate_PXGalacticCrate.mtl"/>
+			<bsphere value="0.000,-0.203,104.946,102.878"/>
+			<box min="-55.427,-59.621,18.407" max="55.427,59.214,191.486"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

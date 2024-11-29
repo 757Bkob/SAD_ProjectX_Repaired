@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXGenerator"/>
+	</state>
+	<mesh_description id="PXGenerator">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXGenerator_PXGenerator.m.hgm"/>
+			<material file="Materials/PXGenerator_PXGenerator.mtl"/>
+			<bsphere value="0.000,2.242,187.879,277.209"/>
+			<box min="-61.190,-192.089,-5.572" max="61.190,196.573,381.330"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="38.689,-106.176,-3.756;-42.373,74.492,-3.756;-42.373,-106.176,-3.756"/>
+		<surf type="collision" points="38.689,-106.176,176.912;-42.373,-106.176,-3.756;-42.373,-106.176,176.912"/>
+		<surf type="collision" points="-42.373,74.492,-3.756;-42.373,-106.176,176.912;-42.373,-106.176,-3.756"/>
+		<surf type="collision" points="38.689,74.492,-3.756;-42.373,74.492,176.912;-42.373,74.492,-3.756"/>
+		<surf type="collision" points="-42.373,-106.176,176.912;-42.373,74.492,-3.756;-42.373,74.492,176.912"/>
+		<surf type="collision" points="-42.373,74.492,176.912;38.689,74.492,176.912;-42.373,-106.176,176.912"/>
+		<surf type="collision" points="-42.373,-106.176,-3.756;38.689,-106.176,176.912;38.689,-106.176,-3.756"/>
+		<surf type="collision" points="38.689,74.492,176.912;38.689,-106.176,-3.756;38.689,-106.176,176.912"/>
+		<surf type="collision" points="-42.373,-106.176,176.912;38.689,74.492,176.912;38.689,-106.176,176.912"/>
+		<surf type="collision" points="38.689,-106.176,-3.756;38.689,74.492,-3.756;-42.373,74.492,-3.756"/>
+		<surf type="collision" points="38.689,-106.176,-3.756;38.689,74.492,176.912;38.689,74.492,-3.756"/>
+		<surf type="collision" points="-42.373,74.492,176.912;38.689,74.492,-3.756;38.689,74.492,176.912"/>
+		<surf_hash type="collision" value="1279459172"/>
+	</mesh_description>
+</entity>

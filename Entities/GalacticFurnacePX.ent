@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="GalacticFurnacePX"/>
+	</state>
+	<mesh_description id="GalacticFurnacePX">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/GalacticFurnacePX_GalacticFurnacePX.m.hgm"/>
+			<material file="Materials/GalacticFurnacePX_GalacticFurnacePX.mtl"/>
+			<bsphere value="22.203,1.412,137.604,200.732"/>
+			<box min="-137.537,-137.537,0.067" max="181.943,140.362,275.141"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="-100.000,100.000,7.750;-100.000,-100.000,207.750;-100.000,-100.000,7.750"/>
+		<surf type="collision" points="100.000,-100.000,207.750;-100.000,-100.000,7.750;-100.000,-100.000,207.750"/>
+		<surf type="collision" points="100.000,-100.000,7.750;-100.000,100.000,7.750;-100.000,-100.000,7.750"/>
+		<surf type="collision" points="-100.000,-100.000,207.750;-100.000,100.000,7.750;-100.000,100.000,207.750"/>
+		<surf type="collision" points="100.000,100.000,7.750;-100.000,100.000,207.750;-100.000,100.000,7.750"/>
+		<surf type="collision" points="-100.000,100.000,207.750;100.000,100.000,207.750;-100.000,-100.000,207.750"/>
+		<surf type="collision" points="-100.000,-100.000,7.750;100.000,-100.000,207.750;100.000,-100.000,7.750"/>
+		<surf type="collision" points="100.000,100.000,207.750;100.000,-100.000,7.750;100.000,-100.000,207.750"/>
+		<surf type="collision" points="-100.000,-100.000,207.750;100.000,100.000,207.750;100.000,-100.000,207.750"/>
+		<surf type="collision" points="100.000,-100.000,7.750;100.000,100.000,7.750;-100.000,100.000,7.750"/>
+		<surf type="collision" points="-100.000,100.000,207.750;100.000,100.000,7.750;100.000,100.000,207.750"/>
+		<surf type="collision" points="100.000,-100.000,7.750;100.000,100.000,207.750;100.000,100.000,7.750"/>
+		<surf_hash type="collision" value="4265372960"/>
+	</mesh_description>
+</entity>

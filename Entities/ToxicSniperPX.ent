@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="ToxicSniperPX"/>
+	</state>
+	<mesh_description id="ToxicSniperPX">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/ToxicSniperPX_ToxicSniperPX.m.hgm"/>
+			<material file="Materials/ToxicSniperPX_ToxicSniperPX.mtl"/>
+			<bsphere value="0.186,-41.396,8.568,87.515"/>
+			<box min="-4.425,-128.612,-10.751" max="4.796,45.821,27.886"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="PXBatteryGen">
+	<state id="idle">
+		<mesh_ref ref="PXBatteryGen"/>
+	</state>
+	<mesh_description id="PXBatteryGen">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXBatteryGen_PXBatteryGen.m.hgm"/>
+			<material file="Materials/PXBatteryGen_PXBatteryGen.mtl"/>
+			<bsphere value="0.000,0.000,57.510,350.870"/>
+			<box min="-307.276,-196.925,-106.047" max="307.276,196.925,221.067"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="-55.270,51.966,-79.242;-55.270,-64.076,36.799;-55.270,-64.076,-79.242"/>
+		<surf type="collision" points="60.772,-64.076,36.799;-55.270,-64.076,-79.242;-55.270,-64.076,36.799"/>
+		<surf type="collision" points="60.772,-64.076,-79.242;-55.270,51.966,-79.242;-55.270,-64.076,-79.242"/>
+		<surf type="collision" points="-55.270,-64.076,36.799;-55.270,51.966,-79.242;-55.270,51.966,36.799"/>
+		<surf type="collision" points="60.772,51.966,-79.242;-55.270,51.966,36.799;-55.270,51.966,-79.242"/>
+		<surf type="collision" points="-55.270,51.966,36.799;60.772,51.966,36.799;-55.270,-64.076,36.799"/>
+		<surf type="collision" points="-55.270,-64.076,-79.242;60.772,-64.076,36.799;60.772,-64.076,-79.242"/>
+		<surf type="collision" points="60.772,51.966,36.799;60.772,-64.076,-79.242;60.772,-64.076,36.799"/>
+		<surf type="collision" points="-55.270,-64.076,36.799;60.772,51.966,36.799;60.772,-64.076,36.799"/>
+		<surf type="collision" points="60.772,-64.076,-79.242;60.772,51.966,-79.242;-55.270,51.966,-79.242"/>
+		<surf type="collision" points="-55.270,51.966,36.799;60.772,51.966,-79.242;60.772,51.966,36.799"/>
+		<surf type="collision" points="60.772,-64.076,-79.242;60.772,51.966,36.799;60.772,51.966,-79.242"/>
+		<surf_hash type="collision" value="3831593856"/>
+	</mesh_description>
+</entity>

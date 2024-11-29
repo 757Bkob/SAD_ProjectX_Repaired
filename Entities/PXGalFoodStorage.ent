@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXGalFoodStorage"/>
+	</state>
+	<mesh_description id="PXGalFoodStorage">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXGalFoodStorage_PXGalFoodStorage.m.hgm"/>
+			<material file="Materials/PXGalFoodStorage_PXGalFoodStorage.mtl"/>
+			<bsphere value="0.000,0.000,213.091,344.440"/>
+			<box min="-171.336,-249.731,-17.877" max="171.336,249.731,444.059"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="-100.000,100.000,99.882;-100.000,-100.000,299.882;-100.000,-100.000,99.882"/>
+		<surf type="collision" points="100.000,-100.000,99.882;-100.000,100.000,99.882;-100.000,-100.000,99.882"/>
+		<surf type="collision" points="100.000,-100.000,299.882;-100.000,-100.000,99.882;-100.000,-100.000,299.882"/>
+		<surf type="collision" points="100.000,100.000,99.882;-100.000,100.000,299.882;-100.000,100.000,99.882"/>
+		<surf type="collision" points="-100.000,-100.000,299.882;-100.000,100.000,99.882;-100.000,100.000,299.882"/>
+		<surf type="collision" points="-100.000,100.000,299.882;100.000,100.000,299.882;-100.000,-100.000,299.882"/>
+		<surf type="collision" points="-100.000,-100.000,99.882;100.000,-100.000,299.882;100.000,-100.000,99.882"/>
+		<surf type="collision" points="-100.000,-100.000,299.882;100.000,100.000,299.882;100.000,-100.000,299.882"/>
+		<surf type="collision" points="100.000,100.000,299.882;100.000,-100.000,99.882;100.000,-100.000,299.882"/>
+		<surf type="collision" points="100.000,-100.000,99.882;100.000,100.000,99.882;-100.000,100.000,99.882"/>
+		<surf type="collision" points="100.000,-100.000,99.882;100.000,100.000,299.882;100.000,100.000,99.882"/>
+		<surf type="collision" points="-100.000,100.000,299.882;100.000,100.000,99.882;100.000,100.000,299.882"/>
+		<surf_hash type="collision" value="2510508561"/>
+	</mesh_description>
+</entity>

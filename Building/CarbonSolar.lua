@@ -1,0 +1,70 @@
+UndefineClass('CarbonSolar')
+DefineClass.CarbonSolar = {
+	__parents = { "SolarPanelAutomated", "MalfunctionOverTimeComponent", "PowerComponent" },
+	__generated_by_class = "ModItemBuildingCompositeDef",
+
+
+	object_class = "SolarPanelAutomated",
+	LockPrerequisites = {
+		PlaceObj('CheckTech', {
+			Tech = "GalacticPower",
+		}),
+	},
+	BuildMenuCategory = "sub_GalacticPowerPX",
+	display_name = T(158250340088, --[[ModItemBuildingCompositeDef CarbonSolar display_name]] "Carbon Solar Panel"),
+	description = T(692220750934, --[[ModItemBuildingCompositeDef CarbonSolar description]] "Generates increased <color TextEmphasis>Electricity</color><image 'UI/Icons/Resources/res_electricity' 1100> during the day."),
+	menu_display_name = T(582614099378, --[[ModItemBuildingCompositeDef CarbonSolar menu_display_name]] "Carbon Solar Panel"),
+	menu_description = T(917104789625, --[[ModItemBuildingCompositeDef CarbonSolar menu_description]] "Carbon Solar Panel generates electricity during the day. Has increased output and capacity."),
+	BuildMenuIcon = "General/GrapheneSolarCells.png",
+	BuildMenuPos = 4,
+	display_name_pl = T(707363855505, --[[ModItemBuildingCompositeDef CarbonSolar display_name_pl]] "Carbon Solar Panel"),
+	display_name_short = T(294070173390, --[[ModItemBuildingCompositeDef CarbonSolar display_name_short]] "Carbon Solar Panel"),
+	entity = "GraphenSolarPanel",
+	labels = {
+		"PowerSources",
+		"SolarFlareShieldedTargets",
+		"BerserkTargets",
+	},
+	can_turn_off = true,
+	construction_cost = PlaceObj('ConstructionCost', {
+		CarbonNanotubes = 100000,
+		ScrapElectronics = 5000,
+	}),
+	construction_points = 100000,
+	repair_cost = PlaceObj('ConstructionCost', {
+		CarbonNanotubes = 20000,
+	}),
+	Health = 150000,
+	MaxHealth = 150000,
+	RoomPlacement = "outdoors",
+	CanPlaceInShelter = false,
+	lock_block_box = box(-600, -1800, 0, 1800, 600, 2100),
+	MinConstructionSkill = 6,
+	terrain_change = "soil",
+	soil_border = 600,
+	soil_form = "circle",
+	apply_res_reqs = false,
+	access_range = 2400,
+	realtime_working_anim = true,
+	attack_attraction = 20,
+	affected_by_disasters = set( "SolarFlare", "Thunderstorm" ),
+	composite_part_parent = {
+		Arm = "Base",
+		Panel = "Arm",
+		Propeller = "Base",
+	},
+	composite_part_spots = {
+		Arm = "Arm",
+		Panel = "Panel",
+		Propeller = "Propeller",
+	},
+	MalfunctionOverTimeComponent = true,
+	PowerComponent = true,
+	MinTimeToMalfunction = 38400000,
+	MaxTimeToMalfunction = 76800000,
+	ChangeOwnerIcon = "UI/Icons/Infopanels/assign_owner",
+	IsPowerGenerator = true,
+	Production = 150000,
+	PowerProductionStopsAtNight = true,
+}
+

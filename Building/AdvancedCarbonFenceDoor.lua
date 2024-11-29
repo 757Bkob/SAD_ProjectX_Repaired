@@ -1,0 +1,70 @@
+UndefineClass('AdvancedCarbonFenceDoor')
+DefineClass.AdvancedCarbonFenceDoor = {
+	__parents = { "FortDoor" },
+	__generated_by_class = "ModItemBuildingCompositeDef",
+
+
+	object_class = "FortDoor",
+	LockPrerequisites = {
+		PlaceObj('CheckTech', {
+			Tech = "TradeFortifications",
+		}),
+	},
+	BuildMenuCategory = "sub_GalacticFortificationsGatesPX",
+	display_name = T(903012479488, --[[ModItemBuildingCompositeDef AdvancedCarbonFenceDoor display_name]] "Adv Carbon Fence Door"),
+	description = T(245606844025, --[[ModItemBuildingCompositeDef AdvancedCarbonFenceDoor description]] "Provides access through fences, an advanced carbon structure that has more durability than standard Carbon."),
+	menu_display_name = T(562729275671, --[[ModItemBuildingCompositeDef AdvancedCarbonFenceDoor menu_display_name]] "Adv Carbon Fence Gate"),
+	BuildMenuIcon = "Trade/AdvCarbonFenceDoor.png",
+	BuildMenuPos = 50,
+	display_name_pl = T(835939428352, --[[ModItemBuildingCompositeDef AdvancedCarbonFenceDoor display_name_pl]] "Adv Carbon Fence Door"),
+	display_name_short = T(592527841019, --[[ModItemBuildingCompositeDef AdvancedCarbonFenceDoor display_name_short]] "Fence door"),
+	entity = "Fence_Carbon_DoorSmall_01",
+	labels = {
+		"Structures",
+	},
+	is_building = false,
+	can_turn_off = true,
+	turn_on_text = T(403559387766, --[[ModItemBuildingCompositeDef AdvancedCarbonFenceDoor turn_on_text |gender-variants]] "Open"),
+	turn_off_text = T(656106245087, --[[ModItemBuildingCompositeDef AdvancedCarbonFenceDoor turn_off_text |gender-variants]] "Close"),
+	construction_cost = PlaceObj('ConstructionCost', {
+		CarbonNanotubes = 25000,
+	}),
+	construction_points = 5000,
+	Health = 1500000,
+	MaxHealth = 1500000,
+	damage_reduction = {
+		blunt = 30,
+		energy = 30,
+		gas = 30,
+		pacify = 30,
+		piercing = 30,
+	},
+	use_upgrade_dummy = false,
+	RoomPlacement = "outdoors",
+	lock_block_box = box(0, -600, 0, 0, 600, 1050),
+	lock_pass_box = box(-900, -600, 0, 900, 600, 1400),
+	IgnoredObstacles = {
+		"FortificationColumnElement",
+	},
+	MinConstructionSkill = 5,
+	can_be_moved = false,
+	fx_actor_base_class = "FenceDoor",
+	apply_res_reqs = false,
+	access_range = 2400,
+	CustomMaterial = "Plastic",
+	turning_on_text = T(771433487069, --[[ModItemBuildingCompositeDef AdvancedCarbonFenceDoor turning_on_text]] "Waiting to be opened"),
+	turning_off_text = T(246745940715, --[[ModItemBuildingCompositeDef AdvancedCarbonFenceDoor turning_off_text]] "Waiting to be closed"),
+	has_turned_off_warning = false,
+	turn_on_icon = "UI/Icons/Infopanels/close_window",
+	turn_off_icon = "UI/Icons/Infopanels/open_window",
+	turn_on_description = T(878786475097, --[[ModItemBuildingCompositeDef AdvancedCarbonFenceDoor turn_on_description]] "Task survivors to open this gate."),
+	turn_off_description = T(625369879934, --[[ModItemBuildingCompositeDef AdvancedCarbonFenceDoor turn_off_description]] "Task survivors to close this gate."),
+	attack_attraction = 0,
+	affected_by_disasters = set(),
+	prefer_in_buildmenu = true,
+	enable_overlay_on_placement = {
+		RangeOverlay = true,
+	},
+	ChangeOwnerIcon = "UI/Icons/Infopanels/assign_owner",
+}
+

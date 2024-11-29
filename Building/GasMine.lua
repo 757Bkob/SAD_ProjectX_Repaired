@@ -1,0 +1,95 @@
+UndefineClass('GasMine')
+DefineClass.GasMine = {
+	__parents = { "SingleUseTrap", "InvulnerableComponent", "MalfunctionOverTimeComponent", "ProximitySwitchComponent" },
+	__generated_by_class = "ModItemBuildingCompositeDef",
+
+	flags = { efAttackable = false, gofDamageable = false, },
+
+	object_class = "SingleUseTrap",
+	LockPrerequisites = {
+		PlaceObj('CheckTech', {
+			Tech = "TradeTraps",
+		}),
+	},
+	unload_anim_handsclose = "standing_DropDown_HandsClose_Low",
+	load_anim_handsclose = "standing_PickUp_HandsClose_Low",
+	BuildMenuCategory = "sub_GalacticFortificationsTrapsPX",
+	display_name = T(867159780902, --[[ModItemBuildingCompositeDef GasMine display_name]] "Gas Mine"),
+	description = T(462507207918, --[[ModItemBuildingCompositeDef GasMine description]] "Simple pressure-activated gas trap. Requires rearming after each use. Has been designed to release toxic chemicals into the air upon being triggered.\n\nStats:\n<style TechSubtitleBlue>- 3 Meter Range.\n- Health Conditions (Damaged Lungs, Shortness of Breath, Pain and Poisoning)\n- Moderate Poisoning - 80% Trigger Chance.\n- Severe Poisoning - 20% Trigger Chance.\n- Extreme Poisoning - 10% Trigger Chance.\n- Instant Death - 2%</style>\n\n<style red>Element:</style> \n<color TextNegative>Blunt</color> | <color TextNegative>Piercing</color> | <color TextNegative>Energy</color> | <color TextPositive>Gas</color> | <color TextNegative>Pacify</color>"),
+	menu_display_name = T(630392949715, --[[ModItemBuildingCompositeDef GasMine menu_display_name]] "Gas Mine"),
+	menu_rollover_hint = T(621918044584, --[[ModItemBuildingCompositeDef GasMine menu_rollover_hint]] "Gas Mine"),
+	BuildMenuIcon = "Trade/TrapExplosive2.png",
+	BuildMenuPos = 30,
+	display_name_pl = T(455949651335, --[[ModItemBuildingCompositeDef GasMine display_name_pl]] "Gas Mine"),
+	entity = "Trap_LandMine",
+	update_interval = 3000,
+	can_turn_off = true,
+	turn_on_text = T(199787407894, --[[ModItemBuildingCompositeDef GasMine turn_on_text |gender-variants]] "Arm"),
+	turn_off_text = T(191982953411, --[[ModItemBuildingCompositeDef GasMine turn_off_text |gender-variants]] "Disarm"),
+	construction_cost = PlaceObj('ConstructionCost', {
+		GlutchGlands = 2000,
+		LiquidFuel = 10000,
+		Metal = 15000,
+	}),
+	construction_points = 10000,
+	repair_cost = PlaceObj('ConstructionCost', {
+		LiquidFuel = 1000,
+		Metal = 5000,
+	}),
+	deconstruction_output = PlaceObj('ConstructionCost', {
+		ScrapMetal = 5000,
+	}),
+	Health = 25000,
+	MaxHealth = 25000,
+	lock_block_box = box(-450, -450, 0, 450, 450, 0),
+	lock_pass_box = box(-600, -600, 0, 600, 600, 700),
+	max_depth = 200,
+	max_elevate = 200,
+	snap_to_passability = true,
+	orient_to_terrain = true,
+	forbid_clip_plane = true,
+	ConstructIgnore = set( "Flooring" ),
+	multi_placement = true,
+	multi_placement_name = T(972762241132, --[[ModItemBuildingCompositeDef GasMine multi_placement_name]] "mine"),
+	multi_placement_name_pl = T(338029937513, --[[ModItemBuildingCompositeDef GasMine multi_placement_name_pl]] "mines"),
+	apply_res_reqs = false,
+	progress = 2000,
+	range_tags = {
+		"combat",
+	},
+	turning_on_text = T(157643921463, --[[ModItemBuildingCompositeDef GasMine turning_on_text]] "Waiting to be armed"),
+	turning_off_text = T(483263123318, --[[ModItemBuildingCompositeDef GasMine turning_off_text]] "Waiting to be disarmed"),
+	turned_off_warning = "Disarmed",
+	turn_on_icon = "UI/Icons/Infopanels/trap_arm",
+	turn_off_icon = "UI/Icons/Infopanels/trap_disarm",
+	turn_on_description = T(349767435293, --[[ModItemBuildingCompositeDef GasMine turn_on_description]] "Task the survivors to arm this trap."),
+	turn_off_description = T(749668794417, --[[ModItemBuildingCompositeDef GasMine turn_off_description]] "Task the survivors to disarm this trap."),
+	turn_on_anim = "standing_DropDown_Hands_Low",
+	turn_off_anim = "standing_DropDown_Hands_Low",
+	enable_overlay_on_placement = {
+		RangeOverlay = true,
+		RoomsOverlay = true,
+	},
+	enable_overlay_on_selection = {
+		RangeOverlay = true,
+	},
+	attack_weapon = "GasMine",
+	AOEFilter = function (obj, self)
+		return IsKindOf(obj, "UnitHealth") and obj.CombatGroup ~= self.CombatGroup
+	end,
+	InvulnerableComponent = true,
+	MalfunctionOverTimeComponent = true,
+	ProximitySwitchComponent = true,
+	MinTimeToMalfunction = 9600000,
+	MaxTimeToMalfunction = 96000000,
+	MinMalfunctionDamage = 100,
+	MaxMalfunctionDamage = 100,
+	AddUseTimeWhenActive = false,
+	ChangeOwnerIcon = "UI/Icons/Infopanels/assign_owner",
+	ProximitySwitchTargetSpot = "Foot",
+	ProximitySwitchRange = 600,
+	ProximitySwitchFilter = function (self, obj)
+		return obj:CanMove() and obj.CombatGroup ~= self.CombatGroup and obj.CombatGroup ~= "ScavengerBirds" and obj:IsOnGround()
+	end,
+}
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="BlueprintSafePX"/>
+	</state>
+	<mesh_description id="BlueprintSafePX">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/BlueprintSafePX_BlueprintSafePX.m.hgm"/>
+			<material file="Materials/BlueprintSafePX_BlueprintSafePX.mtl"/>
+			<bsphere value="2.232,0.000,113.374,221.862"/>
+			<box min="-94.674,-186.136,0.380" max="99.138,186.136,226.369"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="100.000,-100.000,-1.338;-100.000,100.000,-1.338;-100.000,-100.000,-1.338"/>
+		<surf type="collision" points="-100.000,100.000,-1.338;-100.000,-100.000,198.662;-100.000,-100.000,-1.338"/>
+		<surf type="collision" points="100.000,-100.000,198.662;-100.000,-100.000,-1.338;-100.000,-100.000,198.662"/>
+		<surf type="collision" points="-100.000,-100.000,198.662;-100.000,100.000,-1.338;-100.000,100.000,198.662"/>
+		<surf type="collision" points="100.000,100.000,-1.338;-100.000,100.000,198.662;-100.000,100.000,-1.338"/>
+		<surf type="collision" points="-100.000,100.000,198.662;100.000,100.000,198.662;-100.000,-100.000,198.662"/>
+		<surf type="collision" points="-100.000,-100.000,-1.338;100.000,-100.000,198.662;100.000,-100.000,-1.338"/>
+		<surf type="collision" points="100.000,100.000,198.662;100.000,-100.000,-1.338;100.000,-100.000,198.662"/>
+		<surf type="collision" points="-100.000,-100.000,198.662;100.000,100.000,198.662;100.000,-100.000,198.662"/>
+		<surf type="collision" points="100.000,-100.000,-1.338;100.000,100.000,-1.338;-100.000,100.000,-1.338"/>
+		<surf type="collision" points="-100.000,100.000,198.662;100.000,100.000,-1.338;100.000,100.000,198.662"/>
+		<surf type="collision" points="100.000,-100.000,-1.338;100.000,100.000,198.662;100.000,100.000,-1.338"/>
+		<surf_hash type="collision" value="4186238960"/>
+	</mesh_description>
+</entity>

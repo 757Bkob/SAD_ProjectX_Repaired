@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXNanoBlade"/>
+	</state>
+	<mesh_description id="PXNanoBlade">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXNanoBlade_PXNanoBlade.m.hgm"/>
+			<material file="Materials/PXNanoBlade_PXNanoBlade.mtl"/>
+			<bsphere value="-0.885,-0.066,35.208,35.364"/>
+			<box min="-5.015,-4.152,-0.094" max="3.245,4.021,70.511"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

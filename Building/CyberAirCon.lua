@@ -1,0 +1,82 @@
+UndefineClass('CyberAirCon')
+DefineClass.CyberAirCon = {
+	__parents = { "AirConditionerBase", "HeatSourceComponent", "MalfunctionOverTimeComponent", "PowerComponent" },
+	__generated_by_class = "ModItemBuildingCompositeDef",
+
+
+	object_class = "AirConditionerBase",
+	LockPrerequisites = {
+		PlaceObj('CheckTech', {
+			Tech = "CyberAirCon",
+		}),
+	},
+	unload_anim_hands = "standing_DropDown_Hands_High",
+	load_anim_hands = "standing_PickUp_Hands_High",
+	BuildMenuCategory = "sub_CyberPowerPX",
+	display_name = T(511059626222, --[[ModItemBuildingCompositeDef CyberAirCon display_name]] "Cyber Air Conditioner"),
+	description = T(496952824544, --[[ModItemBuildingCompositeDef CyberAirCon description]] "Maintains room temperature to a desired level. Crafted from Cyber materials which enhance the range, effect and overall efficiency of this air conditioning unit.\n\n<center><style red>Contraband</style>"),
+	menu_display_name = T(433305242824, --[[ModItemBuildingCompositeDef CyberAirCon menu_display_name]] "Cyber Air Conditioner"),
+	menu_description = T(371002271057, --[[ModItemBuildingCompositeDef CyberAirCon menu_description]] "Maintains room temperature to a desired level. Crafted from Cyber materials which enhance the range, effect and overall efficiency of this air conditioning unit."),
+	BuildMenuIcon = "CriminalActivity/CyberAirCon.png",
+	BuildMenuPos = 90,
+	display_name_pl = T(708751462825, --[[ModItemBuildingCompositeDef CyberAirCon display_name_pl]] "Cyber Air Conditioner"),
+	entity = "AirConditioner",
+	labels = {
+		"CPUCoreDevice",
+		"SolarFlareShieldedTargets",
+	},
+	update_interval = 5000,
+	can_turn_off = true,
+	construction_cost = PlaceObj('ConstructionCost', {
+		CyberCrystal = 1000,
+		Metal = 20000,
+	}),
+	construction_points = 45000,
+	repair_cost = PlaceObj('ConstructionCost', {
+		Metal = 10000,
+	}),
+	custom_constr_rules = {
+		PlaceObj('ConstructionObjectSnapToWall', {
+			'allow_switch_snap_side', true,
+			'room_snap_side_spot', "Heatsource",
+		}),
+	},
+	deconstruction_output = PlaceObj('ConstructionCost', {}),
+	Health = 400000,
+	MaxHealth = 400000,
+	attached_to_wall = true,
+	lock_block_box = box(-400, -600, 1750, 400, 600, 2450),
+	IgnoredObstacles = {
+		"RoomWallPiece",
+	},
+	MinConstructionSkill = 6,
+	MovingAnimHigh = true,
+	MovingOffsetZ = -1000,
+	apply_res_reqs = false,
+	access_range = 2400,
+	realtime_working_anim = true,
+	attack_attraction = 1,
+	affected_by_disasters = set( "SolarFlare" ),
+	enable_overlay_on_placement = {
+		RoomsOverlay = true,
+	},
+	HeatSourceComponent = true,
+	MalfunctionOverTimeComponent = true,
+	PowerComponent = true,
+	SourceType = "heatpump",
+	TargetTemperature = 24000,
+	HasHeatIndicators = true,
+	HeatIndicatorSpot = "Heatexhaust",
+	HeatIndicatorOffset = point(-500, 0, -1000),
+	HeatIndicatorScale = 200,
+	HeatIndicatorAngle = 10800,
+	PowerOutput = 10000,
+	RadiationRange = 30000,
+	MinTimeToMalfunction = 28800000,
+	MaxTimeToMalfunction = 76800000,
+	ChangeOwnerIcon = "UI/Icons/Infopanels/assign_owner",
+	IsPowerConsumer = true,
+	PowerConsumption = 30000,
+	HasSmartConnection = true,
+}
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXNanoPhantom"/>
+	</state>
+	<mesh_description id="PXNanoPhantom">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXNanoPhantom_PXNanoPhantom.m.hgm"/>
+			<material file="Materials/PXNanoPhantom_PXNanoPhantom.mtl"/>
+			<bsphere value="12.153,0.004,2.795,39.955"/>
+			<box min="-27.290,-3.407,-7.071" max="51.595,3.416,12.660"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

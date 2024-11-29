@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXDartGuns"/>
+	</state>
+	<mesh_description id="PXDartGuns">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXDartGuns_PXDartGuns.m.hgm"/>
+			<material file="Materials/PXDartGuns_PXDartGuns.mtl"/>
+			<bsphere value="0.093,-12.343,5.269,25.338"/>
+			<box min="-2.826,-37.281,-4.598" max="3.011,12.595,15.136"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

@@ -1,0 +1,87 @@
+UndefineClass('TurretGalacticLaserTurret')
+DefineClass.TurretGalacticLaserTurret = {
+	__parents = { "LaserTurret", "MalfunctionOverTimeComponent", "ResConsumerDeviceComponent" },
+	__generated_by_class = "ModItemBuildingCompositeDef",
+
+
+	object_class = "LaserTurret",
+	LockPrerequisites = {
+		PlaceObj('CheckTech', {
+			Tech = "WirelessGalacticTurret",
+		}),
+	},
+	BuildMenuCategory = "sub_GalacticWirelessTurretsPX",
+	display_name = T(649047915031, --[[ModItemBuildingCompositeDef TurretGalacticLaserTurret display_name]] "Wireless Laser Turret"),
+	description = T(434699622202, --[[ModItemBuildingCompositeDef TurretGalacticLaserTurret description]] "<style blue>Wireless Laser Turret</style>\nWireless Automated defense station. Shoots a highly concentrated electrical laser beam at a target in range. Has increased range and damage. Can cause <color TextNegative>laser burns</color>.\n\n<style red>Element:</style> \n<color TextPositive>Blunt</color> | <color TextNegative>Piercing</color> | <color TextPositive>Energy</color> | <color TextNegative>Gas</color> | <color TextNegative>Pacify</color>"),
+	menu_display_name = T(914295440271, --[[ModItemBuildingCompositeDef TurretGalacticLaserTurret menu_display_name]] "Wireless Laser Turret"),
+	BuildMenuIcon = "Trade/WirelessTurretsMain.png",
+	BuildMenuPos = 30,
+	display_name_pl = T(888141710886, --[[ModItemBuildingCompositeDef TurretGalacticLaserTurret display_name_pl]] "Wireless Laser Turret"),
+	display_name_short = T(986715074206, --[[ModItemBuildingCompositeDef TurretGalacticLaserTurret display_name_short]] "Turret"),
+	labels = {
+		"CPUCoreDevice",
+		"BerserkTargets",
+		"SolarFlareShieldedTargets",
+	},
+	can_turn_off = true,
+	construction_cost = PlaceObj('ConstructionCost', {
+		CPUCore = 1000,
+		Metal = 50000,
+		PowerCell = 1000,
+	}),
+	construction_points = 200000,
+	repair_cost = PlaceObj('ConstructionCost', {
+		Metal = 50000,
+	}),
+	HitNegationChance = {
+		blunt = 10,
+		energy = 10,
+		gas = 10,
+		pacify = 10,
+		piercing = 10,
+	},
+	deconstruction_output = PlaceObj('ConstructionCost', {
+		CPUCore = 1000,
+		ScrapMetal = 50000,
+	}),
+	Health = 500000,
+	MaxHealth = 500000,
+	damage_reduction = {
+		blunt = 10,
+		energy = 10,
+		gas = 10,
+		pacify = 10,
+		piercing = 10,
+	},
+	RoomPlacement = "outdoors",
+	lock_block_box = box(-600, -600, 0, 600, 600, 1400),
+	lock_pass_box = box(-1200, -1200, 700, 1200, 1200, 2800),
+	terrain_change = "soil",
+	soil_form = "circle",
+	apply_res_reqs = false,
+	progress = 50000,
+	attack_attraction = 60,
+	affected_by_disasters = set( "DustStorm", "Thunderstorm" ),
+	enable_overlay_on_placement = {
+		RangeOverlay = true,
+	},
+	enable_overlay_on_selection = {
+		RangeOverlay = true,
+	},
+	SightRange = 70000,
+	track_flying_targets = true,
+	attack_weapon = "GalacticLaserTurret",
+	attack_retry = true,
+	MalfunctionOverTimeComponent = true,
+	ResConsumerDeviceComponent = true,
+	MinTimeToMalfunction = 38400000,
+	MaxTimeToMalfunction = 76800000,
+	ChangeOwnerIcon = "UI/Icons/Infopanels/assign_owner",
+	PowerConsumption = 50000,
+	HasSmartConnection = true,
+	res_consumed = "PowerCell",
+	res_stored = 1000,
+	res_operate_time = 23040000,
+	res_start_fueled = true,
+}
+

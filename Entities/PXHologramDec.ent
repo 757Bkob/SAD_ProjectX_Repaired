@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXHologramDec"/>
+	</state>
+	<mesh_description id="PXHologramDec">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXHologramDec_PXHologramDec.m.hgm"/>
+			<material file="Materials/PXHologramDec_PXHologramDec.mtl"/>
+			<bsphere value="-1.041,0.282,192.502,335.722"/>
+			<box min="-244.924,-274.002,-0.816" max="242.843,274.565,385.819"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="222.756,-237.851,-29.935;-222.756,237.851,-29.935;-222.756,-237.851,-29.935"/>
+		<surf type="collision" points="-222.756,237.851,-29.935;-222.756,-237.851,170.065;-222.756,-237.851,-29.935"/>
+		<surf type="collision" points="222.756,-237.851,170.065;-222.756,-237.851,-29.935;-222.756,-237.851,170.065"/>
+		<surf type="collision" points="-222.756,-237.851,170.065;-222.756,237.851,-29.935;-222.756,237.851,170.065"/>
+		<surf type="collision" points="-222.756,237.851,170.065;222.756,237.851,170.065;-222.756,-237.851,170.065"/>
+		<surf type="collision" points="222.756,237.851,-29.935;-222.756,237.851,170.065;-222.756,237.851,-29.935"/>
+		<surf type="collision" points="-222.756,-237.851,-29.935;222.756,-237.851,170.065;222.756,-237.851,-29.935"/>
+		<surf type="collision" points="-222.756,-237.851,170.065;222.756,237.851,170.065;222.756,-237.851,170.065"/>
+		<surf type="collision" points="222.756,237.851,170.065;222.756,-237.851,-29.935;222.756,-237.851,170.065"/>
+		<surf type="collision" points="222.756,-237.851,-29.935;222.756,237.851,-29.935;-222.756,237.851,-29.935"/>
+		<surf type="collision" points="-222.756,237.851,170.065;222.756,237.851,-29.935;222.756,237.851,170.065"/>
+		<surf type="collision" points="222.756,-237.851,-29.935;222.756,237.851,170.065;222.756,237.851,-29.935"/>
+		<surf_hash type="collision" value="2406673021"/>
+	</mesh_description>
+</entity>

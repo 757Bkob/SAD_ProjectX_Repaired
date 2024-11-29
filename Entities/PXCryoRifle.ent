@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXCryoRifle"/>
+	</state>
+	<mesh_description id="PXCryoRifle">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXCryoRifle_PXCryoRifle.m.hgm"/>
+			<material file="Materials/PXCryoRifle_PXCryoRifle.mtl"/>
+			<bsphere value="3.128,-32.653,13.482,72.360"/>
+			<box min="-8.599,-103.573,-9.239" max="14.856,38.267,36.202"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

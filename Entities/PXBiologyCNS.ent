@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXBiologyCNS"/>
+	</state>
+	<mesh_description id="PXBiologyCNS">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXBiologyCNS_PXBiologyCNS.m.hgm"/>
+			<material file="Materials/PXBiologyCNS_PXBiologyCNS.mtl"/>
+			<bsphere value="-4.532,-27.524,91.552,122.396"/>
+			<box min="-57.230,-101.082,-0.003" max="48.165,46.034,183.106"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/untitled.fbx"/>
+		</lod>
+		<attach name="Basicsolderinginterface" spot_note="Origin" spot_pos="-92.265,-0.844,0.000" spot_rot="0.707107,0.000000,0.000000,180.0000" spot_scale="0"/>
+		<attach name="Path1" spot_note="chain=1,waypoint=1" spot_pos="-120.182,-1.664,0.000" spot_rot="0.000000,0.000000,1.000000,0.0000" spot_scale="1"/>
+		<surf type="collision" points="26.812,-43.615,-15.484;-19.422,41.890,-15.484;-19.422,-43.615,-15.484"/>
+		<surf type="collision" points="26.812,-43.615,90.473;-19.422,-43.615,-15.484;-19.422,-43.615,90.473"/>
+		<surf type="collision" points="-19.422,41.890,-15.484;-19.422,-43.615,90.473;-19.422,-43.615,-15.484"/>
+		<surf type="collision" points="26.812,41.890,-15.484;-19.422,41.890,90.473;-19.422,41.890,-15.484"/>
+		<surf type="collision" points="-19.422,-43.615,90.473;-19.422,41.890,-15.484;-19.422,41.890,90.473"/>
+		<surf type="collision" points="-19.422,41.890,90.473;26.812,41.890,90.473;-19.422,-43.615,90.473"/>
+		<surf type="collision" points="-19.422,-43.615,-15.484;26.812,-43.615,90.473;26.812,-43.615,-15.484"/>
+		<surf type="collision" points="26.812,41.890,90.473;26.812,-43.615,-15.484;26.812,-43.615,90.473"/>
+		<surf type="collision" points="-19.422,-43.615,90.473;26.812,41.890,90.473;26.812,-43.615,90.473"/>
+		<surf type="collision" points="26.812,-43.615,-15.484;26.812,41.890,-15.484;-19.422,41.890,-15.484"/>
+		<surf type="collision" points="26.812,-43.615,-15.484;26.812,41.890,90.473;26.812,41.890,-15.484"/>
+		<surf type="collision" points="-19.422,41.890,90.473;26.812,41.890,-15.484;26.812,41.890,90.473"/>
+		<surf_hash type="collision" value="1812699855"/>
+	</mesh_description>
+</entity>

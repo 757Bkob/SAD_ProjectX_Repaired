@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXEyeSculptures"/>
+	</state>
+	<mesh_description id="PXEyeSculptures">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXEyeSculptures_PXEyeSculptures.m.hgm"/>
+			<material file="Materials/PXEyeSculptures_PXEyeSculptures.mtl"/>
+			<bsphere value="6.459,0.675,84.098,161.607"/>
+			<box min="-46.379,-126.192,-3.534" max="59.298,127.542,171.731"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="45.646,-111.545,92.125;-45.646,-111.545,0.832;-45.646,-111.545,92.125"/>
+		<surf type="collision" points="-45.646,111.545,0.832;-45.646,-111.545,92.125;-45.646,-111.545,0.832"/>
+		<surf type="collision" points="45.646,-111.545,0.832;-45.646,111.545,0.832;-45.646,-111.545,0.832"/>
+		<surf type="collision" points="-45.646,-111.545,92.125;-45.646,111.545,0.832;-45.646,111.545,92.125"/>
+		<surf type="collision" points="-45.646,111.545,92.125;45.646,111.545,92.125;-45.646,-111.545,92.125"/>
+		<surf type="collision" points="45.646,111.545,0.832;-45.646,111.545,92.125;-45.646,111.545,0.832"/>
+		<surf type="collision" points="-45.646,-111.545,0.832;45.646,-111.545,92.125;45.646,-111.545,0.832"/>
+		<surf type="collision" points="45.646,111.545,92.125;45.646,-111.545,0.832;45.646,-111.545,92.125"/>
+		<surf type="collision" points="-45.646,-111.545,92.125;45.646,111.545,92.125;45.646,-111.545,92.125"/>
+		<surf type="collision" points="45.646,-111.545,0.832;45.646,111.545,0.832;-45.646,111.545,0.832"/>
+		<surf type="collision" points="45.646,-111.545,0.832;45.646,111.545,92.125;45.646,111.545,0.832"/>
+		<surf type="collision" points="-45.646,111.545,92.125;45.646,111.545,0.832;45.646,111.545,92.125"/>
+		<surf_hash type="collision" value="1890041245"/>
+	</mesh_description>
+</entity>

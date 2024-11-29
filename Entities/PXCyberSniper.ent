@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="PXCyberSniper">
+	<state id="idle">
+		<mesh_ref ref="PXCyberSniper"/>
+	</state>
+	<mesh_description id="PXCyberSniper">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXCyberSniper_PXCyberSniper.m.hgm"/>
+			<material file="Materials/PXCyberSniper_PXCyberSniper.mtl"/>
+			<bsphere value="49.071,0.000,12.633,131.475"/>
+			<box min="-81.522,-5.844,-14.776" max="179.664,5.844,40.042"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

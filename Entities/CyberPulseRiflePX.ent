@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="CyberPulseRiflePX"/>
+	</state>
+	<mesh_description id="CyberPulseRiflePX">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/CyberPulseRiflePX_CyberPulseRiflePX.m.hgm"/>
+			<material file="Materials/CyberPulseRiflePX_CyberPulseRiflePX.mtl"/>
+			<bsphere value="18.039,0.142,19.869,61.906"/>
+			<box min="-42.531,-5.257,-2.593" max="78.609,5.541,42.331"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

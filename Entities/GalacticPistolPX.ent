@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="GalacticPistolPX">
+	<state id="idle">
+		<mesh_ref ref="GalacticPistolPX"/>
+	</state>
+	<mesh_description id="GalacticPistolPX">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/GalacticPistolPX_GalacticPistolPX.m.hgm"/>
+			<material file="Materials/GalacticPistolPX_GalacticPistolPX.mtl"/>
+			<bsphere value="-0.958,-7.077,8.875,28.650"/>
+			<box min="-5.163,-35.243,-8.421" max="3.247,21.088,26.171"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

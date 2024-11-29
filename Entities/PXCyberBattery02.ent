@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXCyberBattery02"/>
+	</state>
+	<mesh_description id="PXCyberBattery02">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXCyberBattery02_PXCyberBattery02.m.hgm"/>
+			<material file="Materials/PXCyberBattery02_PXCyberBattery02.mtl"/>
+			<bsphere value="0.025,0.000,197.066,265.301"/>
+			<box min="-175.512,-175.513,1.859" max="175.561,175.513,392.272"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="100.000,-100.000,-5.481;-100.000,100.000,-5.481;-100.000,-100.000,-5.481"/>
+		<surf type="collision" points="-100.000,100.000,-5.481;-100.000,-100.000,194.519;-100.000,-100.000,-5.481"/>
+		<surf type="collision" points="100.000,-100.000,194.519;-100.000,-100.000,-5.481;-100.000,-100.000,194.519"/>
+		<surf type="collision" points="-100.000,-100.000,194.519;-100.000,100.000,-5.481;-100.000,100.000,194.519"/>
+		<surf type="collision" points="100.000,100.000,-5.481;-100.000,100.000,194.519;-100.000,100.000,-5.481"/>
+		<surf type="collision" points="-100.000,100.000,194.519;100.000,100.000,194.519;-100.000,-100.000,194.519"/>
+		<surf type="collision" points="-100.000,-100.000,-5.481;100.000,-100.000,194.519;100.000,-100.000,-5.481"/>
+		<surf type="collision" points="100.000,100.000,194.519;100.000,-100.000,-5.481;100.000,-100.000,194.519"/>
+		<surf type="collision" points="-100.000,-100.000,194.519;100.000,100.000,194.519;100.000,-100.000,194.519"/>
+		<surf type="collision" points="100.000,-100.000,-5.481;100.000,100.000,-5.481;-100.000,100.000,-5.481"/>
+		<surf type="collision" points="-100.000,100.000,194.519;100.000,100.000,-5.481;100.000,100.000,194.519"/>
+		<surf type="collision" points="100.000,-100.000,-5.481;100.000,100.000,194.519;100.000,100.000,-5.481"/>
+		<surf_hash type="collision" value="3682916005"/>
+	</mesh_description>
+</entity>

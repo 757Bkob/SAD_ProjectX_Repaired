@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXDecorMushrooms"/>
+	</state>
+	<mesh_description id="PXDecorMushrooms">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXDecorMushrooms_PXDecorMushrooms.m.hgm"/>
+			<material file="Materials/PXDecorMushrooms_PXDecorMushrooms.mtl"/>
+			<bsphere value="5.293,0.007,77.839,87.175"/>
+			<box min="-56.676,-60.980,-0.132" max="67.263,60.994,155.810"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="-37.982,37.982,1.555;-37.982,-37.982,77.520;-37.982,-37.982,1.555"/>
+		<surf type="collision" points="37.982,-37.982,1.555;-37.982,37.982,1.555;-37.982,-37.982,1.555"/>
+		<surf type="collision" points="37.982,-37.982,77.520;-37.982,-37.982,1.555;-37.982,-37.982,77.520"/>
+		<surf type="collision" points="37.982,37.982,1.555;-37.982,37.982,77.520;-37.982,37.982,1.555"/>
+		<surf type="collision" points="-37.982,-37.982,77.520;-37.982,37.982,1.555;-37.982,37.982,77.520"/>
+		<surf type="collision" points="-37.982,37.982,77.520;37.982,37.982,77.520;-37.982,-37.982,77.520"/>
+		<surf type="collision" points="-37.982,-37.982,1.555;37.982,-37.982,77.520;37.982,-37.982,1.555"/>
+		<surf type="collision" points="-37.982,-37.982,77.520;37.982,37.982,77.520;37.982,-37.982,77.520"/>
+		<surf type="collision" points="37.982,37.982,77.520;37.982,-37.982,1.555;37.982,-37.982,77.520"/>
+		<surf type="collision" points="37.982,-37.982,1.555;37.982,37.982,1.555;-37.982,37.982,1.555"/>
+		<surf type="collision" points="37.982,-37.982,1.555;37.982,37.982,77.520;37.982,37.982,1.555"/>
+		<surf type="collision" points="-37.982,37.982,77.520;37.982,37.982,1.555;37.982,37.982,77.520"/>
+		<surf_hash type="collision" value="3913887120"/>
+	</mesh_description>
+</entity>

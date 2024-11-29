@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXShockRifle1"/>
+	</state>
+	<mesh_description id="PXShockRifle1">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXShockRifle1_PXShockRifle1.m.hgm"/>
+			<material file="Materials/PXShockRifle1_PXShockRifle1.mtl"/>
+			<bsphere value="30.328,0.000,-0.086,103.791"/>
+			<box min="-71.541,-28.037,-19.874" max="132.197,28.037,19.701"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="LCraftingCrateLPX"/>
+	</state>
+	<mesh_description id="LCraftingCrateLPX">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/LCraftingCratePX_LCraftingCrateLPX.m.hgm"/>
+			<material file="Materials/LCraftingCratePX_LCraftingCrateLPX.mtl"/>
+			<bsphere value="4.641,0.299,76.156,129.083"/>
+			<box min="-90.272,-61.512,0.454" max="99.554,62.110,151.858"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="-87.673,52.327,2.830;-87.673,-52.327,154.647;-87.673,-52.327,2.830"/>
+		<surf type="collision" points="97.196,-52.327,2.830;-87.673,52.327,2.830;-87.673,-52.327,2.830"/>
+		<surf type="collision" points="97.196,-52.327,154.647;-87.673,-52.327,2.830;-87.673,-52.327,154.647"/>
+		<surf type="collision" points="-87.673,-52.327,154.647;-87.673,52.327,2.830;-87.673,52.327,154.647"/>
+		<surf type="collision" points="97.196,52.327,2.830;-87.673,52.327,154.647;-87.673,52.327,2.830"/>
+		<surf type="collision" points="-87.673,52.327,154.647;97.196,52.327,154.647;-87.673,-52.327,154.647"/>
+		<surf type="collision" points="-87.673,-52.327,2.830;97.196,-52.327,154.647;97.196,-52.327,2.830"/>
+		<surf type="collision" points="-87.673,-52.327,154.647;97.196,52.327,154.647;97.196,-52.327,154.647"/>
+		<surf type="collision" points="97.196,52.327,154.647;97.196,-52.327,2.830;97.196,-52.327,154.647"/>
+		<surf type="collision" points="97.196,-52.327,2.830;97.196,52.327,2.830;-87.673,52.327,2.830"/>
+		<surf type="collision" points="-87.673,52.327,154.647;97.196,52.327,2.830;97.196,52.327,154.647"/>
+		<surf type="collision" points="97.196,-52.327,2.830;97.196,52.327,154.647;97.196,52.327,2.830"/>
+		<surf_hash type="collision" value="296414706"/>
+	</mesh_description>
+</entity>

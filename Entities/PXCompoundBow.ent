@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXCompoundBow"/>
+	</state>
+	<mesh_description id="PXCompoundBow">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXCompoundBow_PXCompoundBow.m.hgm"/>
+			<material file="Materials/PXCompoundBow_PXCompoundBow.mtl"/>
+			<bsphere value="-4.505,0.029,3.416,58.937"/>
+			<box min="-20.466,-57.885,0.334" max="11.455,57.943,6.498"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

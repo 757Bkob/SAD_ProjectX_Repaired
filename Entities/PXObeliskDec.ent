@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXObeliskDec"/>
+	</state>
+	<mesh_description id="PXObeliskDec">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXObeliskDec_PXObeliskDec.m.hgm"/>
+			<material file="Materials/PXObeliskDec_PXObeliskDec.mtl"/>
+			<bsphere value="-1.754,-5.675,180.039,211.866"/>
+			<box min="-113.368,-116.597,0.244" max="109.859,105.246,359.833"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="100.000,-100.000,-5.087;-100.000,100.000,-5.087;-100.000,-100.000,-5.087"/>
+		<surf type="collision" points="-100.000,100.000,-5.087;-100.000,-100.000,194.913;-100.000,-100.000,-5.087"/>
+		<surf type="collision" points="100.000,-100.000,194.913;-100.000,-100.000,-5.087;-100.000,-100.000,194.913"/>
+		<surf type="collision" points="-100.000,-100.000,194.913;-100.000,100.000,-5.087;-100.000,100.000,194.913"/>
+		<surf type="collision" points="100.000,100.000,-5.087;-100.000,100.000,194.913;-100.000,100.000,-5.087"/>
+		<surf type="collision" points="-100.000,100.000,194.913;100.000,100.000,194.913;-100.000,-100.000,194.913"/>
+		<surf type="collision" points="-100.000,-100.000,-5.087;100.000,-100.000,194.913;100.000,-100.000,-5.087"/>
+		<surf type="collision" points="100.000,100.000,194.913;100.000,-100.000,-5.087;100.000,-100.000,194.913"/>
+		<surf type="collision" points="-100.000,-100.000,194.913;100.000,100.000,194.913;100.000,-100.000,194.913"/>
+		<surf type="collision" points="100.000,-100.000,-5.087;100.000,100.000,-5.087;-100.000,100.000,-5.087"/>
+		<surf type="collision" points="-100.000,100.000,194.913;100.000,100.000,-5.087;100.000,100.000,194.913"/>
+		<surf type="collision" points="100.000,-100.000,-5.087;100.000,100.000,194.913;100.000,100.000,-5.087"/>
+		<surf_hash type="collision" value="113644280"/>
+	</mesh_description>
+</entity>

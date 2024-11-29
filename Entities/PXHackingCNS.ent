@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXHackingCNS"/>
+	</state>
+	<mesh_description id="PXHackingCNS">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXHackingCNS_PXHackingCNS.m.hgm"/>
+			<material file="Materials/PXHackingCNS_PXHackingCNS.mtl"/>
+			<bsphere value="5.126,-0.913,90.100,105.366"/>
+			<box min="-45.850,-40.122,0.255" max="56.101,38.295,179.946"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/untitled.fbx"/>
+		</lod>
+		<attach name="Basicsolderinginterface" spot_note="Origin" spot_pos="-86.344,-0.844,0.000" spot_rot="0.707107,-0.000000,0.000000,180.0000" spot_scale="0"/>
+		<attach name="Path1" spot_note="chain=1,waypoint=1" spot_pos="-120.182,-1.664,0.000" spot_rot="0.000000,0.000000,1.000000,0.0000" spot_scale="1"/>
+		<surf type="collision" points="-3.458,24.293,1.896;-3.231,-24.294,156.496;-3.231,-24.294,1.896"/>
+		<surf type="collision" points="-3.231,-24.294,156.496;-3.458,24.293,1.896;-3.458,24.293,156.496"/>
+		<surf type="collision" points="44.723,-24.071,1.896;-3.458,24.293,1.896;-3.231,-24.294,1.896"/>
+		<surf type="collision" points="-3.231,-24.294,1.896;44.723,-24.071,156.496;44.723,-24.071,1.896"/>
+		<surf type="collision" points="44.723,-24.071,156.496;-3.231,-24.294,1.896;-3.231,-24.294,156.496"/>
+		<surf type="collision" points="-3.231,-24.294,156.496;-3.458,24.293,156.496;44.723,-24.071,156.496"/>
+		<surf type="collision" points="44.496,24.517,156.496;44.723,-24.071,1.896;44.723,-24.071,156.496"/>
+		<surf type="collision" points="-3.458,24.293,1.896;44.723,-24.071,1.896;44.496,24.517,1.896"/>
+		<surf type="collision" points="44.496,24.517,1.896;-3.458,24.293,156.496;-3.458,24.293,1.896"/>
+		<surf type="collision" points="44.723,-24.071,1.896;44.496,24.517,156.496;44.496,24.517,1.896"/>
+		<surf type="collision" points="-3.458,24.293,156.496;44.496,24.517,1.896;44.496,24.517,156.496"/>
+		<surf type="collision" points="-3.458,24.293,156.496;44.496,24.517,156.496;44.723,-24.071,156.496"/>
+		<surf_hash type="collision" value="1832939343"/>
+	</mesh_description>
+</entity>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXCraftStorage1"/>
+	</state>
+	<mesh_description id="PXCraftStorage1">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXCraftStorage1_PXCraftStorage1.m.hgm"/>
+			<material file="Materials/PXCraftStorage1_PXCraftStorage1.mtl"/>
+			<bsphere value="6.713,1.246,86.082,95.997"/>
+			<box min="-44.751,-45.058,1.402" max="58.178,47.550,170.761"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="100.000,-100.000,-2.341;-100.000,100.000,-2.341;-100.000,-100.000,-2.341"/>
+		<surf type="collision" points="-100.000,100.000,-2.341;-100.000,-100.000,197.659;-100.000,-100.000,-2.341"/>
+		<surf type="collision" points="100.000,-100.000,197.659;-100.000,-100.000,-2.341;-100.000,-100.000,197.659"/>
+		<surf type="collision" points="-100.000,-100.000,197.659;-100.000,100.000,-2.341;-100.000,100.000,197.659"/>
+		<surf type="collision" points="100.000,100.000,-2.341;-100.000,100.000,197.659;-100.000,100.000,-2.341"/>
+		<surf type="collision" points="-100.000,100.000,197.659;100.000,100.000,197.659;-100.000,-100.000,197.659"/>
+		<surf type="collision" points="-100.000,-100.000,-2.341;100.000,-100.000,197.659;100.000,-100.000,-2.341"/>
+		<surf type="collision" points="100.000,100.000,197.659;100.000,-100.000,-2.341;100.000,-100.000,197.659"/>
+		<surf type="collision" points="-100.000,-100.000,197.659;100.000,100.000,197.659;100.000,-100.000,197.659"/>
+		<surf type="collision" points="100.000,-100.000,-2.341;100.000,100.000,-2.341;-100.000,100.000,-2.341"/>
+		<surf type="collision" points="-100.000,100.000,197.659;100.000,100.000,-2.341;100.000,100.000,197.659"/>
+		<surf type="collision" points="100.000,-100.000,-2.341;100.000,100.000,197.659;100.000,100.000,-2.341"/>
+		<surf_hash type="collision" value="3328937846"/>
+	</mesh_description>
+</entity>

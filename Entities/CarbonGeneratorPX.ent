@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="CarbonGeneratorPX"/>
+	</state>
+	<mesh_description id="CarbonGeneratorPX">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/CarbonGeneratorPX_CarbonGeneratorPX.m.hgm"/>
+			<material file="Materials/CarbonGeneratorPX_CarbonGeneratorPX.mtl"/>
+			<bsphere value="1.985,4.182,26.025,62.108"/>
+			<box min="-46.836,-28.452,-3.037" max="50.806,36.817,55.087"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="9.943,-13.568,-5.264;-8.837,5.211,-5.264;-8.837,-13.568,-5.264"/>
+		<surf type="collision" points="9.943,-13.568,13.516;-8.837,-13.568,-5.264;-8.837,-13.568,13.516"/>
+		<surf type="collision" points="-8.837,5.211,-5.264;-8.837,-13.568,13.516;-8.837,-13.568,-5.264"/>
+		<surf type="collision" points="-8.837,-13.568,13.516;-8.837,5.211,-5.264;-8.837,5.211,13.516"/>
+		<surf type="collision" points="-8.837,5.211,13.516;9.943,5.211,13.516;-8.837,-13.568,13.516"/>
+		<surf type="collision" points="9.943,5.211,-5.264;-8.837,5.211,13.516;-8.837,5.211,-5.264"/>
+		<surf type="collision" points="9.943,-13.568,-5.264;9.943,5.211,-5.264;-8.837,5.211,-5.264"/>
+		<surf type="collision" points="-8.837,-13.568,-5.264;9.943,-13.568,13.516;9.943,-13.568,-5.264"/>
+		<surf type="collision" points="9.943,5.211,13.516;9.943,-13.568,-5.264;9.943,-13.568,13.516"/>
+		<surf type="collision" points="9.943,-13.568,-5.264;9.943,5.211,13.516;9.943,5.211,-5.264"/>
+		<surf type="collision" points="-8.837,-13.568,13.516;9.943,5.211,13.516;9.943,-13.568,13.516"/>
+		<surf type="collision" points="-8.837,5.211,13.516;9.943,5.211,-5.264;9.943,5.211,13.516"/>
+		<surf_hash type="collision" value="3634930540"/>
+	</mesh_description>
+</entity>

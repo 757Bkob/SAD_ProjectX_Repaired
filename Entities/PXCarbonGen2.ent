@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXCarbonGen2"/>
+	</state>
+	<mesh_description id="PXCarbonGen2">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXCarbonGen2_PXCarbonGen2.m.hgm"/>
+			<material file="Materials/PXCarbonGen2_PXCarbonGen2.mtl"/>
+			<bsphere value="-5.103,-0.823,80.963,158.681"/>
+			<box min="-125.961,-95.860,-0.651" max="115.754,94.214,162.577"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="100.000,-100.000,-5.272;-100.000,100.000,-5.272;-100.000,-100.000,-5.272"/>
+		<surf type="collision" points="-100.000,100.000,-5.272;-100.000,-100.000,194.728;-100.000,-100.000,-5.272"/>
+		<surf type="collision" points="100.000,-100.000,194.728;-100.000,-100.000,-5.272;-100.000,-100.000,194.728"/>
+		<surf type="collision" points="-100.000,-100.000,194.728;-100.000,100.000,-5.272;-100.000,100.000,194.728"/>
+		<surf type="collision" points="100.000,100.000,-5.272;-100.000,100.000,194.728;-100.000,100.000,-5.272"/>
+		<surf type="collision" points="-100.000,100.000,194.728;100.000,100.000,194.728;-100.000,-100.000,194.728"/>
+		<surf type="collision" points="-100.000,-100.000,-5.272;100.000,-100.000,194.728;100.000,-100.000,-5.272"/>
+		<surf type="collision" points="100.000,100.000,194.728;100.000,-100.000,-5.272;100.000,-100.000,194.728"/>
+		<surf type="collision" points="-100.000,-100.000,194.728;100.000,100.000,194.728;100.000,-100.000,194.728"/>
+		<surf type="collision" points="100.000,-100.000,-5.272;100.000,100.000,-5.272;-100.000,100.000,-5.272"/>
+		<surf type="collision" points="-100.000,100.000,194.728;100.000,100.000,-5.272;100.000,100.000,194.728"/>
+		<surf type="collision" points="100.000,-100.000,-5.272;100.000,100.000,194.728;100.000,100.000,-5.272"/>
+		<surf_hash type="collision" value="313584502"/>
+	</mesh_description>
+</entity>

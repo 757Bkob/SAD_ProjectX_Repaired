@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXLureTower"/>
+	</state>
+	<mesh_description id="PXLureTower">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXLureTower_PXLureTower.m.hgm"/>
+			<material file="Materials/PXLureTower_PXLureTower.mtl"/>
+			<bsphere value="5.695,-1.698,126.100,141.770"/>
+			<box min="-41.347,-55.543,0.109" max="52.737,52.147,252.092"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="49.572,-46.031,-1.623;-42.490,46.031,-1.623;-42.490,-46.031,-1.623"/>
+		<surf type="collision" points="49.572,-46.031,90.439;-42.490,-46.031,-1.623;-42.490,-46.031,90.439"/>
+		<surf type="collision" points="-42.490,46.031,-1.623;-42.490,-46.031,90.439;-42.490,-46.031,-1.623"/>
+		<surf type="collision" points="-42.490,-46.031,90.439;-42.490,46.031,-1.623;-42.490,46.031,90.439"/>
+		<surf type="collision" points="49.572,46.031,-1.623;-42.490,46.031,90.439;-42.490,46.031,-1.623"/>
+		<surf type="collision" points="-42.490,46.031,90.439;49.572,46.031,90.439;-42.490,-46.031,90.439"/>
+		<surf type="collision" points="-42.490,-46.031,-1.623;49.572,-46.031,90.439;49.572,-46.031,-1.623"/>
+		<surf type="collision" points="49.572,46.031,90.439;49.572,-46.031,-1.623;49.572,-46.031,90.439"/>
+		<surf type="collision" points="-42.490,-46.031,90.439;49.572,46.031,90.439;49.572,-46.031,90.439"/>
+		<surf type="collision" points="49.572,-46.031,-1.623;49.572,46.031,-1.623;-42.490,46.031,-1.623"/>
+		<surf type="collision" points="-42.490,46.031,90.439;49.572,46.031,-1.623;49.572,46.031,90.439"/>
+		<surf type="collision" points="49.572,-46.031,-1.623;49.572,46.031,90.439;49.572,46.031,-1.623"/>
+		<surf_hash type="collision" value="927973851"/>
+	</mesh_description>
+</entity>

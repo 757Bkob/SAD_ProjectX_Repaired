@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="CyberHelmetoPX03"/>
+	</state>
+	<mesh_description id="CyberHelmetoPX03">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/CyberHelmetoPX03_CyberHelmetoPX03.m.hgm"/>
+			<material file="Materials/CyberHelmetoPX03_CyberHelmetoPX03.mtl"/>
+			<bsphere value="0.000,0.000,64.555,112.622"/>
+			<box min="-100.000,-70.210,-25.823" max="100.000,70.210,154.933"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

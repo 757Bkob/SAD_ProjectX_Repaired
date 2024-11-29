@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="AlienRockDecPX"/>
+	</state>
+	<mesh_description id="AlienRockDecPX">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/AlienRockDecPX_AlienRockDecPX.m.hgm"/>
+			<material file="Materials/AlienRockDecPX_AlienRockDecPX.mtl"/>
+			<bsphere value="0.000,0.000,87.110,118.189"/>
+			<box min="-96.690,-100.000,-0.399" max="96.690,100.000,174.619"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="-100.000,100.000,-100.000;-100.000,-100.000,100.000;-100.000,-100.000,-100.000"/>
+		<surf type="collision" points="100.000,-100.000,-100.000;-100.000,100.000,-100.000;-100.000,-100.000,-100.000"/>
+		<surf type="collision" points="100.000,-100.000,100.000;-100.000,-100.000,-100.000;-100.000,-100.000,100.000"/>
+		<surf type="collision" points="100.000,100.000,-100.000;-100.000,100.000,100.000;-100.000,100.000,-100.000"/>
+		<surf type="collision" points="-100.000,-100.000,100.000;-100.000,100.000,-100.000;-100.000,100.000,100.000"/>
+		<surf type="collision" points="-100.000,100.000,100.000;100.000,100.000,100.000;-100.000,-100.000,100.000"/>
+		<surf type="collision" points="-100.000,-100.000,-100.000;100.000,-100.000,100.000;100.000,-100.000,-100.000"/>
+		<surf type="collision" points="-100.000,-100.000,100.000;100.000,100.000,100.000;100.000,-100.000,100.000"/>
+		<surf type="collision" points="100.000,100.000,100.000;100.000,-100.000,-100.000;100.000,-100.000,100.000"/>
+		<surf type="collision" points="100.000,-100.000,-100.000;100.000,100.000,-100.000;-100.000,100.000,-100.000"/>
+		<surf type="collision" points="100.000,-100.000,-100.000;100.000,100.000,100.000;100.000,100.000,-100.000"/>
+		<surf type="collision" points="-100.000,100.000,100.000;100.000,100.000,-100.000;100.000,100.000,100.000"/>
+		<surf_hash type="collision" value="3906687308"/>
+	</mesh_description>
+</entity>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="GalacticRiflePX"/>
+	</state>
+	<mesh_description id="GalacticRiflePX">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/GalacticRiflePX_GalacticRiflePX.m.hgm"/>
+			<material file="Materials/GalacticRiflePX_GalacticRiflePX.mtl"/>
+			<bsphere value="-16.797,0.618,11.724,53.656"/>
+			<box min="-69.824,-2.798,-7.520" max="36.230,4.033,30.968"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

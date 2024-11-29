@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXNanoKhopesh2"/>
+	</state>
+	<mesh_description id="PXNanoKhopesh2">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXNanoKhopesh2_PXNanoKhopesh2.m.hgm"/>
+			<material file="Materials/PXNanoKhopesh2_PXNanoKhopesh2.mtl"/>
+			<bsphere value="-3.503,-0.029,97.006,99.713"/>
+			<box min="-16.038,-4.628,-2.422" max="9.032,4.569,196.434"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

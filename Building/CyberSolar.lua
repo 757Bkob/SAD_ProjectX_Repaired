@@ -1,0 +1,71 @@
+UndefineClass('CyberSolar')
+DefineClass.CyberSolar = {
+	__parents = { "SolarPanelAutomated", "MalfunctionOverTimeComponent", "PowerComponent" },
+	__generated_by_class = "ModItemBuildingCompositeDef",
+
+
+	object_class = "SolarPanelAutomated",
+	LockPrerequisites = {
+		PlaceObj('CheckTech', {
+			Tech = "CyberSolarPanel",
+		}),
+	},
+	BuildMenuCategory = "sub_CyberPowerPX",
+	display_name = T(262188938830, --[[ModItemBuildingCompositeDef CyberSolar display_name]] "Cyber Solar Panel"),
+	description = T(542723819889, --[[ModItemBuildingCompositeDef CyberSolar description]] "Generates increased <color TextEmphasis>Electricity</color><image 'UI/Icons/Resources/res_electricity' 1100> during the day. Cannot be effected by weather conditions."),
+	menu_display_name = T(745630640496, --[[ModItemBuildingCompositeDef CyberSolar menu_display_name]] "Cyber Solar Panel"),
+	menu_description = T(916091193205, --[[ModItemBuildingCompositeDef CyberSolar menu_description]] "Cyber Solar Panel generates electricity during the day. Has increased output and capacity. Weather resistant."),
+	BuildMenuIcon = "CriminalActivity/CyberSolarPanel.png",
+	BuildMenuPos = 4,
+	display_name_pl = T(792088598498, --[[ModItemBuildingCompositeDef CyberSolar display_name_pl]] "Cyber Solar Panel"),
+	display_name_short = T(831792475690, --[[ModItemBuildingCompositeDef CyberSolar display_name_short]] "Cyber Solar"),
+	entity = "GraphenSolarPanel",
+	labels = {
+		"PowerSources",
+		"SolarFlareShieldedTargets",
+		"BerserkTargets",
+	},
+	can_turn_off = true,
+	construction_cost = PlaceObj('ConstructionCost', {
+		CarbonNanotubes = 40000,
+		CyberCore = 1000,
+		HackingDevice = 1000,
+	}),
+	construction_points = 100000,
+	repair_cost = PlaceObj('ConstructionCost', {
+		CarbonNanotubes = 10000,
+	}),
+	Health = 300000,
+	MaxHealth = 300000,
+	RoomPlacement = "outdoors",
+	CanPlaceInShelter = false,
+	lock_block_box = box(-600, -1800, 0, 1800, 600, 2100),
+	MinConstructionSkill = 6,
+	terrain_change = "soil",
+	soil_border = 600,
+	soil_form = "circle",
+	apply_res_reqs = false,
+	access_range = 2400,
+	realtime_working_anim = true,
+	attack_attraction = 20,
+	affected_by_disasters = set(),
+	composite_part_parent = {
+		Arm = "Base",
+		Panel = "Arm",
+		Propeller = "Base",
+	},
+	composite_part_spots = {
+		Arm = "Arm",
+		Panel = "Panel",
+		Propeller = "Propeller",
+	},
+	MalfunctionOverTimeComponent = true,
+	PowerComponent = true,
+	MinTimeToMalfunction = 57600000,
+	MaxTimeToMalfunction = 115200000,
+	ChangeOwnerIcon = "UI/Icons/Infopanels/assign_owner",
+	IsPowerGenerator = true,
+	Production = 550000,
+	PowerProductionStopsAtNight = true,
+}
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXNanoSwarmer"/>
+	</state>
+	<mesh_description id="PXNanoSwarmer">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXNanoSwarmer_PXNanoSwarmer.m.hgm"/>
+			<material file="Materials/PXNanoSwarmer_PXNanoSwarmer.mtl"/>
+			<bsphere value="-68.278,0.370,10.094,92.922"/>
+			<box min="-159.795,-16.053,-3.130" max="23.239,16.794,23.318"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXCrates03"/>
+	</state>
+	<mesh_description id="PXCrates03">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXCrates03_PXCrates03.m.hgm"/>
+			<material file="Materials/PXCrates03_PXCrates03.mtl"/>
+			<bsphere value="0.000,0.000,58.136,173.750"/>
+			<box min="-64.697,-161.133,0.000" max="64.697,161.133,116.272"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="32.082,-32.082,22.857;-32.082,32.082,22.857;-32.082,-32.082,22.857"/>
+		<surf type="collision" points="-32.082,32.082,22.857;-32.082,-32.082,87.020;-32.082,-32.082,22.857"/>
+		<surf type="collision" points="32.082,-32.082,87.020;-32.082,-32.082,22.857;-32.082,-32.082,87.020"/>
+		<surf type="collision" points="-32.082,-32.082,87.020;-32.082,32.082,22.857;-32.082,32.082,87.020"/>
+		<surf type="collision" points="32.082,32.082,22.857;-32.082,32.082,87.020;-32.082,32.082,22.857"/>
+		<surf type="collision" points="-32.082,32.082,87.020;32.082,32.082,87.020;-32.082,-32.082,87.020"/>
+		<surf type="collision" points="-32.082,-32.082,22.857;32.082,-32.082,87.020;32.082,-32.082,22.857"/>
+		<surf type="collision" points="32.082,32.082,87.020;32.082,-32.082,22.857;32.082,-32.082,87.020"/>
+		<surf type="collision" points="-32.082,-32.082,87.020;32.082,32.082,87.020;32.082,-32.082,87.020"/>
+		<surf type="collision" points="32.082,-32.082,22.857;32.082,32.082,22.857;-32.082,32.082,22.857"/>
+		<surf type="collision" points="-32.082,32.082,87.020;32.082,32.082,22.857;32.082,32.082,87.020"/>
+		<surf type="collision" points="32.082,-32.082,22.857;32.082,32.082,87.020;32.082,32.082,22.857"/>
+		<surf_hash type="collision" value="3982271975"/>
+	</mesh_description>
+</entity>

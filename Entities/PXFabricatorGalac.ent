@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="PXFabricatorGalac">
+	<state id="idle">
+		<mesh_ref ref="PXFabricatorGalac"/>
+	</state>
+	<mesh_description id="PXFabricatorGalac">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXFabricatorGalac_PXFabricatorGalac.m.hgm"/>
+			<material file="Materials/PXFabricatorGalac_PXFabricatorGalac.mtl"/>
+			<bsphere value="-12.001,-4.448,221.547,282.754"/>
+			<box min="-192.578,-85.404,0.034" max="168.576,76.509,443.059"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<attach name="Spot" spot_pos="251.752,0.000,0.000" spot_rot="0.000000,0.000000,1.000000,0.0000"/>
+		<surf type="collision" points="-161.204,80.848,2.937;-161.204,-80.848,362.335;-161.204,-80.848,2.937"/>
+		<surf type="collision" points="135.281,-80.848,2.937;-161.204,80.848,2.937;-161.204,-80.848,2.937"/>
+		<surf type="collision" points="135.281,-80.848,362.335;-161.204,-80.848,2.937;-161.204,-80.848,362.335"/>
+		<surf type="collision" points="135.281,80.848,2.937;-161.204,80.848,362.335;-161.204,80.848,2.937"/>
+		<surf type="collision" points="-161.204,-80.848,362.335;-161.204,80.848,2.937;-161.204,80.848,362.335"/>
+		<surf type="collision" points="-161.204,80.848,362.335;135.281,80.848,362.335;-161.204,-80.848,362.335"/>
+		<surf type="collision" points="-161.204,-80.848,2.937;135.281,-80.848,362.335;135.281,-80.848,2.937"/>
+		<surf type="collision" points="135.281,80.848,362.335;135.281,-80.848,2.937;135.281,-80.848,362.335"/>
+		<surf type="collision" points="-161.204,-80.848,362.335;135.281,80.848,362.335;135.281,-80.848,362.335"/>
+		<surf type="collision" points="135.281,-80.848,2.937;135.281,80.848,2.937;-161.204,80.848,2.937"/>
+		<surf type="collision" points="135.281,-80.848,2.937;135.281,80.848,362.335;135.281,80.848,2.937"/>
+		<surf type="collision" points="-161.204,80.848,362.335;135.281,80.848,2.937;135.281,80.848,362.335"/>
+		<surf_hash type="collision" value="2975760065"/>
+	</mesh_description>
+</entity>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="PXLightningRod">
+	<state id="idle">
+		<mesh_ref ref="PXLightningRod"/>
+	</state>
+	<mesh_description id="PXLightningRod">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXLightningRod_PXLightningRod.m.hgm"/>
+			<material file="Materials/PXLightningRod_PXLightningRod.mtl"/>
+			<bsphere value="-1.008,0.000,1186.793,1189.762"/>
+			<box min="-110.194,-99.743,0.000" max="108.178,99.743,2373.586"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="100.000,-100.000,-15.542;-100.000,100.000,-15.542;-100.000,-100.000,-15.542"/>
+		<surf type="collision" points="-100.000,100.000,-15.542;-100.000,-100.000,3518.277;-100.000,-100.000,-15.542"/>
+		<surf type="collision" points="100.000,-100.000,3518.277;-100.000,-100.000,-15.542;-100.000,-100.000,3518.277"/>
+		<surf type="collision" points="100.000,100.000,-15.542;-100.000,100.000,3518.277;-100.000,100.000,-15.542"/>
+		<surf type="collision" points="-100.000,-100.000,3518.277;-100.000,100.000,-15.542;-100.000,100.000,3518.277"/>
+		<surf type="collision" points="-100.000,100.000,3518.277;100.000,100.000,3518.277;-100.000,-100.000,3518.277"/>
+		<surf type="collision" points="-100.000,-100.000,-15.542;100.000,-100.000,3518.277;100.000,-100.000,-15.542"/>
+		<surf type="collision" points="100.000,100.000,3518.277;100.000,-100.000,-15.542;100.000,-100.000,3518.277"/>
+		<surf type="collision" points="-100.000,-100.000,3518.277;100.000,100.000,3518.277;100.000,-100.000,3518.277"/>
+		<surf type="collision" points="100.000,-100.000,-15.542;100.000,100.000,-15.542;-100.000,100.000,-15.542"/>
+		<surf type="collision" points="100.000,-100.000,-15.542;100.000,100.000,3518.277;100.000,100.000,-15.542"/>
+		<surf type="collision" points="-100.000,100.000,3518.277;100.000,100.000,-15.542;100.000,100.000,3518.277"/>
+		<surf_hash type="collision" value="899409962"/>
+	</mesh_description>
+</entity>

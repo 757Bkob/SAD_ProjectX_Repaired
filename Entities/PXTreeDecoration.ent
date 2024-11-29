@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXTreeDecoration"/>
+	</state>
+	<mesh_description id="PXTreeDecoration">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXTreeDecoration_PXTreeDecoration.m.hgm"/>
+			<material file="Materials/PXTreeDecoration_PXTreeDecoration.mtl"/>
+			<bsphere value="44.675,32.797,197.901,309.198"/>
+			<box min="-96.856,-177.823,-82.987" max="186.206,243.417,478.789"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="-46.731,100.000,-1.609;-46.731,-100.000,198.391;-46.731,-100.000,-1.609"/>
+		<surf type="collision" points="-46.731,-100.000,198.391;-46.731,100.000,-1.609;-46.731,100.000,198.391"/>
+		<surf type="collision" points="153.269,-100.000,-1.609;-46.731,100.000,-1.609;-46.731,-100.000,-1.609"/>
+		<surf type="collision" points="153.269,-100.000,198.391;-46.731,-100.000,-1.609;-46.731,-100.000,198.391"/>
+		<surf type="collision" points="-46.731,-100.000,-1.609;153.269,-100.000,198.391;153.269,-100.000,-1.609"/>
+		<surf type="collision" points="153.269,100.000,198.391;153.269,-100.000,-1.609;153.269,-100.000,198.391"/>
+		<surf type="collision" points="-46.731,-100.000,198.391;153.269,100.000,198.391;153.269,-100.000,198.391"/>
+		<surf type="collision" points="153.269,-100.000,-1.609;153.269,100.000,-1.609;-46.731,100.000,-1.609"/>
+		<surf type="collision" points="153.269,100.000,-1.609;-46.731,100.000,198.391;-46.731,100.000,-1.609"/>
+		<surf type="collision" points="153.269,-100.000,-1.609;153.269,100.000,198.391;153.269,100.000,-1.609"/>
+		<surf type="collision" points="-46.731,100.000,198.391;153.269,100.000,-1.609;153.269,100.000,198.391"/>
+		<surf type="collision" points="-46.731,100.000,198.391;153.269,100.000,198.391;-46.731,-100.000,198.391"/>
+		<surf_hash type="collision" value="86635520"/>
+	</mesh_description>
+</entity>

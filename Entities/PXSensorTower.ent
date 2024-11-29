@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXSensorTower"/>
+	</state>
+	<mesh_description id="PXSensorTower">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXSensorTower_PXSensorTower.m.hgm"/>
+			<material file="Materials/PXSensorTower_PXSensorTower.mtl"/>
+			<bsphere value="3.955,-4.208,168.696,177.131"/>
+			<box min="-57.640,-70.200,2.130" max="65.550,61.784,335.263"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="55.241,-52.114,-39.431;-55.241,52.114,-39.431;-55.241,-52.114,-39.431"/>
+		<surf type="collision" points="-55.241,52.114,-39.431;-55.241,-52.114,335.400;-55.241,-52.114,-39.431"/>
+		<surf type="collision" points="55.241,-52.114,335.400;-55.241,-52.114,-39.431;-55.241,-52.114,335.400"/>
+		<surf type="collision" points="55.241,52.114,-39.431;-55.241,52.114,335.400;-55.241,52.114,-39.431"/>
+		<surf type="collision" points="-55.241,-52.114,335.400;-55.241,52.114,-39.431;-55.241,52.114,335.400"/>
+		<surf type="collision" points="-55.241,52.114,335.400;55.241,52.114,335.400;-55.241,-52.114,335.400"/>
+		<surf type="collision" points="-55.241,-52.114,-39.431;55.241,-52.114,335.400;55.241,-52.114,-39.431"/>
+		<surf type="collision" points="55.241,52.114,335.400;55.241,-52.114,-39.431;55.241,-52.114,335.400"/>
+		<surf type="collision" points="-55.241,-52.114,335.400;55.241,52.114,335.400;55.241,-52.114,335.400"/>
+		<surf type="collision" points="55.241,-52.114,-39.431;55.241,52.114,-39.431;-55.241,52.114,-39.431"/>
+		<surf type="collision" points="55.241,-52.114,-39.431;55.241,52.114,335.400;55.241,52.114,-39.431"/>
+		<surf type="collision" points="-55.241,52.114,335.400;55.241,52.114,-39.431;55.241,52.114,335.400"/>
+		<surf_hash type="collision" value="4144027518"/>
+	</mesh_description>
+</entity>

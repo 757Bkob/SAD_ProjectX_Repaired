@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXCarbonBatteryNew"/>
+	</state>
+	<mesh_description id="PXCarbonBatteryNew">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXCarbonBatteryNew_PXCarbonBatteryNew.m.hgm"/>
+			<material file="Materials/PXCarbonBatteryNew_PXCarbonBatteryNew.mtl"/>
+			<bsphere value="5.269,-6.357,195.460,211.282"/>
+			<box min="-72.824,-92.397,2.635" max="83.361,79.683,388.286"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="-100.000,100.000,5.661;-100.000,-100.000,205.661;-100.000,-100.000,5.661"/>
+		<surf type="collision" points="100.000,-100.000,205.661;-100.000,-100.000,5.661;-100.000,-100.000,205.661"/>
+		<surf type="collision" points="100.000,-100.000,5.661;-100.000,100.000,5.661;-100.000,-100.000,5.661"/>
+		<surf type="collision" points="-100.000,-100.000,205.661;-100.000,100.000,5.661;-100.000,100.000,205.661"/>
+		<surf type="collision" points="100.000,100.000,5.661;-100.000,100.000,205.661;-100.000,100.000,5.661"/>
+		<surf type="collision" points="-100.000,100.000,205.661;100.000,100.000,205.661;-100.000,-100.000,205.661"/>
+		<surf type="collision" points="-100.000,-100.000,5.661;100.000,-100.000,205.661;100.000,-100.000,5.661"/>
+		<surf type="collision" points="100.000,100.000,205.661;100.000,-100.000,5.661;100.000,-100.000,205.661"/>
+		<surf type="collision" points="-100.000,-100.000,205.661;100.000,100.000,205.661;100.000,-100.000,205.661"/>
+		<surf type="collision" points="100.000,-100.000,5.661;100.000,100.000,5.661;-100.000,100.000,5.661"/>
+		<surf type="collision" points="-100.000,100.000,205.661;100.000,100.000,5.661;100.000,100.000,205.661"/>
+		<surf type="collision" points="100.000,-100.000,5.661;100.000,100.000,205.661;100.000,100.000,5.661"/>
+		<surf_hash type="collision" value="2155028487"/>
+	</mesh_description>
+</entity>

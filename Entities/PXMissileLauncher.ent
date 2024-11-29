@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXMissileLauncher"/>
+	</state>
+	<mesh_description id="PXMissileLauncher">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXMissileLauncher_PXMissileLauncher.m.hgm"/>
+			<material file="Materials/PXMissileLauncher_PXMissileLauncher.mtl"/>
+			<bsphere value="9.889,7.090,6.533,37.202"/>
+			<box min="-25.882,-3.012,-5.757" max="45.661,17.192,18.824"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

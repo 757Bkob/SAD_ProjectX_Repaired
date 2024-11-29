@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXRecycleBox"/>
+	</state>
+	<mesh_description id="PXRecycleBox">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXRecycleBox_PXRecycleBox.m.hgm"/>
+			<material file="Materials/PXRecycleBox_PXRecycleBox.mtl"/>
+			<bsphere value="0.000,0.000,97.906,127.688"/>
+			<box min="-57.939,-57.920,-9.783" max="57.939,57.920,205.595"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/garbage_lowpoly.fbx"/>
+		</lod>
+		<surf type="collision" points="-39.108,39.108,142.137;-39.108,-39.108,63.921;-39.108,-39.108,142.137"/>
+		<surf type="collision" points="39.108,-39.108,63.921;-39.108,-39.108,142.137;-39.108,-39.108,63.921"/>
+		<surf type="collision" points="-39.108,39.108,142.137;-39.108,-39.108,142.137;39.108,-39.108,142.137"/>
+		<surf type="collision" points="39.108,39.108,63.921;-39.108,-39.108,63.921;-39.108,39.108,63.921"/>
+		<surf type="collision" points="-39.108,-39.108,63.921;-39.108,39.108,142.137;-39.108,39.108,63.921"/>
+		<surf type="collision" points="39.108,39.108,142.137;-39.108,39.108,63.921;-39.108,39.108,142.137"/>
+		<surf type="collision" points="39.108,-39.108,63.921;-39.108,-39.108,63.921;39.108,39.108,63.921"/>
+		<surf type="collision" points="-39.108,-39.108,142.137;39.108,-39.108,63.921;39.108,-39.108,142.137"/>
+		<surf type="collision" points="39.108,39.108,63.921;39.108,-39.108,142.137;39.108,-39.108,63.921"/>
+		<surf type="collision" points="-39.108,39.108,63.921;39.108,39.108,142.137;39.108,39.108,63.921"/>
+		<surf type="collision" points="39.108,-39.108,142.137;39.108,39.108,63.921;39.108,39.108,142.137"/>
+		<surf type="collision" points="-39.108,39.108,142.137;39.108,-39.108,142.137;39.108,39.108,142.137"/>
+		<surf_hash type="collision" value="2517991436"/>
+	</mesh_description>
+</entity>

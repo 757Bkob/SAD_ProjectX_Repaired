@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="PXSciFiCar"/>
+	</state>
+	<mesh_description id="PXSciFiCar">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/PXSciFiCar_PXSciFiCar.m.hgm"/>
+			<material file="Materials/PXSciFiCar_PXSciFiCar.mtl"/>
+			<bsphere value="-0.741,-0.687,113.356,378.493"/>
+			<box min="-183.798,-348.588,3.224" max="182.317,347.214,223.489"/>
+			<src file="C:/Users/44796/AppData/Roaming/Stranded - Alien Dawn/ModAssets/FBX/.fbx"/>
+		</lod>
+		<surf type="collision" points="100.000,-326.219,-7.812;-100.000,326.219,-7.812;-100.000,-326.219,-7.812"/>
+		<surf type="collision" points="100.000,-326.219,192.188;-100.000,-326.219,-7.812;-100.000,-326.219,192.188"/>
+		<surf type="collision" points="-100.000,326.219,-7.812;-100.000,-326.219,192.188;-100.000,-326.219,-7.812"/>
+		<surf type="collision" points="-100.000,-326.219,192.188;-100.000,326.219,-7.812;-100.000,326.219,192.188"/>
+		<surf type="collision" points="-100.000,326.219,192.188;100.000,326.219,192.188;-100.000,-326.219,192.188"/>
+		<surf type="collision" points="100.000,326.219,-7.812;-100.000,326.219,192.188;-100.000,326.219,-7.812"/>
+		<surf type="collision" points="-100.000,-326.219,-7.812;100.000,-326.219,192.188;100.000,-326.219,-7.812"/>
+		<surf type="collision" points="100.000,326.219,192.188;100.000,-326.219,-7.812;100.000,-326.219,192.188"/>
+		<surf type="collision" points="-100.000,-326.219,192.188;100.000,326.219,192.188;100.000,-326.219,192.188"/>
+		<surf type="collision" points="100.000,-326.219,-7.812;100.000,326.219,-7.812;-100.000,326.219,-7.812"/>
+		<surf type="collision" points="100.000,-326.219,-7.812;100.000,326.219,192.188;100.000,326.219,-7.812"/>
+		<surf type="collision" points="-100.000,326.219,192.188;100.000,326.219,-7.812;100.000,326.219,192.188"/>
+		<surf_hash type="collision" value="108888959"/>
+	</mesh_description>
+</entity>
