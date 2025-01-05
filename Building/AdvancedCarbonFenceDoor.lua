@@ -40,6 +40,7 @@ DefineClass.AdvancedCarbonFenceDoor = {
 		piercing = 30,
 	},
 	use_upgrade_dummy = false,
+	upgrade_label = "FenceGate",
 	RoomPlacement = "outdoors",
 	lock_block_box = box(0, -600, 0, 0, 600, 1050),
 	lock_pass_box = box(-900, -600, 0, 900, 600, 1400),

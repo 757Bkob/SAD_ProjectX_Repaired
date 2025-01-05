@@ -45,6 +45,7 @@ DefineClass.GalacticLaserGate = {
 		piercing = 30,
 	},
 	use_upgrade_dummy = false,
+	upgrade_label = "Gate",
 	RoomPlacement = "outdoors",
 	lock_block_box = box(0, -1800, 0, 0, 1800, 2100),
 	lock_pass_box = box(-600, -1800, 0, 600, 1800, 2100),

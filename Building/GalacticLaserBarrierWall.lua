@@ -44,6 +44,7 @@ DefineClass.GalacticLaserBarrierWall = {
 		piercing = 20,
 	},
 	use_upgrade_dummy = false,
+	upgrade_label = "Wall",
 	RoomPlacement = "outdoors",
 	max_depth = 350,
 	IgnoredObstacles = {

@@ -38,6 +38,7 @@ DefineClass.AdvancedCarbonFence = {
 		piercing = 30,
 	},
 	use_upgrade_dummy = false,
+	upgrade_label = "Fence",
 	RoomPlacement = "outdoors",
 	max_depth = 350,
 	max_elevate = 350,

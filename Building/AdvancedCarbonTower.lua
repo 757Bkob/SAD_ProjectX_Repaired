@@ -36,6 +36,7 @@ DefineClass.AdvancedCarbonTower = {
 		pacify = 30,
 		piercing = 30,
 	},
+	upgrade_label = "Tower",
 	RoomPlacement = "outdoors",
 	lock_flags = 12,
 	lock_block_box = box(-900, -900, 0, 900, 900, 2800),

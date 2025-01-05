@@ -11,8 +11,10 @@ function SavegameFixups.PXFixes()
 			setMachine = true
 		end
 	end)
-	if setMachine then
-		ForceActivateStoryBit("px_droid_intro")
+	if not MapVarValues['px_tut'] == nil then
+		if setMachine then
+			ForceActivateStoryBit("px_droid_intro")
+		end
 	end
 	-- local success, response = pcall(px_set_map_vars(),nil)
 	-- print("Setting Map vars was: ",success)
@@ -27,6 +29,24 @@ function SavegameFixups.PXFixes()
 			print("MinTimeBetweenAttacks reset because it was above max!")
 			Game:SetCooldown("MinTimeBetweenAttacks", MoonInstance.AttackCooldownMin, true)
 		end
+	end
+end
+
+local function are_prereqs_loaded()
+	print("Checking for PX PreReqs")
+	local ilu = false
+	local comlib = false
+	for _,mod in ipairs(ModsLoaded) do
+		if mod.id == 'rtw6tLg' then
+			print("Found ILU")
+			ilu = true
+		elseif mod.id == 'sad_commonlib' then
+			print("Found commonlib")
+			comlib = true
+		end
+	end
+	if not (ilu and comlib) then
+		ForceActivateStoryBit("PreReqs_Not_Found")
 	end
 end
 
@@ -45,7 +65,7 @@ function test()
 	end
 end
 
-function fibCount(no)
+local function fibCount(no)
 -- create Fibonacci sequence
   local fib = {1, 1}  -- starting with 1, 2
   if no < 2 then
@@ -143,7 +163,7 @@ function px_set_map_vars()
 	}
 	print("Checking what PX vars I need to add!")
 	for _, var in ipairs(all_vars) do
-		if not table.find(MapVars,var['name']) then
+		if MapVarValues[var['name']] == nil then
 			MapVar(var['name'],var['init'])
 			print("I added ",var['name'],' to MapVars!')
 		else
@@ -159,7 +179,13 @@ local function px_init(id)
 	px_set_map_vars()
 end
 
-OnMsg.LoadGame = px_init
+local function px_full()
+	px_init('ucCehPy')
+	are_prereqs_loaded()
+	return
+end
+
+OnMsg.LoadGame = px_full
 OnMsg.Start = px_init
-OnMsg.GameStarted = px_init
-OnMsg.NewGame = px_init
+OnMsg.GameStarted = px_full
+OnMsg.NewGame = px_full

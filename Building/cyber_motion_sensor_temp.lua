@@ -1,6 +1,6 @@
 UndefineClass('cyber_motion_sensor_temp')
 DefineClass.cyber_motion_sensor_temp = {
-	__parents = { "Building", "MalfunctionOverTimeComponent", "PowerComponent" },
+	__parents = { "Building", "MalfunctionOverTimeComponent" },
 	__generated_by_class = "ModItemBuildingCompositeDef",
 
 
@@ -57,7 +57,6 @@ DefineClass.cyber_motion_sensor_temp = {
 		RangeOverlay = true,
 	},
 	MalfunctionOverTimeComponent = true,
-	PowerComponent = true,
 	TurnOnDelay = 0,
 	StatusTextWorking = T(435160793445, --[[ModItemBuildingCompositeDef cyber_motion_sensor_temp StatusTextWorking]] "<negative>Detecting threats</negative>"),
 	StatusTextNotWorking = T(680984201551, --[[ModItemBuildingCompositeDef cyber_motion_sensor_temp StatusTextNotWorking]] "<positive>No threats are detected</negative>"),
