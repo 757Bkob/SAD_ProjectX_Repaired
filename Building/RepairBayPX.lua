@@ -1,6 +1,6 @@
 UndefineClass('RepairBayPX')
 DefineClass.RepairBayPX = {
-	__parents = { "Building", "PowerComponent", "ProductionDeviceComponent" },
+	__parents = { "Building", "OwnedComponent", "PowerComponent", "ProductionDeviceComponent" },
 	__generated_by_class = "ModItemBuildingCompositeDef",
 
 
@@ -48,6 +48,7 @@ DefineClass.RepairBayPX = {
 	enable_overlay_on_placement = {
 		RoomsOverlay = true,
 	},
+	OwnedComponent = true,
 	PowerComponent = true,
 	ProductionDeviceComponent = true,
 	ChangeOwnerIcon = "UI/Icons/Infopanels/assign_owner",

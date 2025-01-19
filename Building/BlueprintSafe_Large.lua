@@ -33,7 +33,6 @@ DefineClass.BlueprintSafe_Large = {
 		Metal = 100000,
 	}),
 	construction_points = 5000,
-	deconstruction_output = PlaceObj('ConstructionCost', {}),
 	Health = 1200000,
 	MaxHealth = 1200000,
 	upgrade_label = "StorageChest",

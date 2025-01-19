@@ -43,7 +43,6 @@ DefineClass.AlienAirCon = {
 			'room_snap_side_spot', "Heatsource",
 		}),
 	},
-	deconstruction_output = PlaceObj('ConstructionCost', {}),
 	Health = 1400000,
 	MaxHealth = 1400000,
 	attached_to_wall = true,

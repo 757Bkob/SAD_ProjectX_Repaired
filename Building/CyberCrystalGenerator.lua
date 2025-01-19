@@ -41,7 +41,6 @@ DefineClass.CyberCrystalGenerator = {
 		Metal = 25000,
 		ScrapElectronics = 5000,
 	}),
-	deconstruction_output = PlaceObj('ConstructionCost', {}),
 	Health = 500000,
 	MaxHealth = 500000,
 	RoomPlacement = "outdoors",

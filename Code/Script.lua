@@ -77,9 +77,9 @@ local function fibCount(no)
   return fib[no]
 end
 
-function droid_cost_calc()
+function droid_cost_calc(count)
 	print("Droid count check, updating repair kits and coins to purchase another one")
-	local count = 0
+	local count = count or 0
 	local droid_resource_mapping = {
 		{name='Money',scale=500000},
 		{name='EnergyCrystals',scale=100},
@@ -103,6 +103,8 @@ function droid_cost_calc()
 	local resource = droid_resource_mapping[drm_index]['name']
 	local amount = f_count * droid_resource_mapping[drm_index]['scale']
 	-- to-do set droid price return resource, amount
+	print("The resource cost is now: ",resource,". And the amount is: ",amount)
+	return resource, amount
 end
 
 function human_cost_calc()
@@ -139,6 +141,10 @@ function diminishReturnCheck(classname)
 	end
 end
 
+function TFormat.DroidRepairKits(context_obj)
+    return droid_repair_needed
+end
+
 function px_set_map_vars()
 	local all_vars = {
 		{name="px_Empire_rapport",init=500},
@@ -151,7 +157,8 @@ function px_set_map_vars()
 		{name="px_black_market_rapport",init=0},
 		{name="px_black_market_rapport",init=0},
 		{name="hire_cost",init=50000},
-		{name="droid_cost",init=100000},
+		{name="droid_hire_cost",init=100000},
+		{name="droid_hire_resource",init='Money'},
 		{name="droid_repair_needed",init=5},
 		{name="colonist_cost",init=false},
 		{name="colonist_expensive_cost",init=false},

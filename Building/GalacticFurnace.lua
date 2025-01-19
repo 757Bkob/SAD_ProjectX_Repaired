@@ -1,6 +1,6 @@
 UndefineClass('GalacticFurnace')
 DefineClass.GalacticFurnace = {
-	__parents = { "Building", "MalfunctionOverTimeComponent", "PowerComponent", "ProductionDeviceComponent" },
+	__parents = { "Building", "MalfunctionOverTimeComponent", "OwnedComponent", "PowerComponent", "ProductionDeviceComponent" },
 	__generated_by_class = "ModItemBuildingCompositeDef",
 
 
@@ -42,6 +42,7 @@ DefineClass.GalacticFurnace = {
 		RoomsOverlay = true,
 	},
 	MalfunctionOverTimeComponent = true,
+	OwnedComponent = true,
 	PowerComponent = true,
 	ProductionDeviceComponent = true,
 	MinTimeToMalfunction = 38400000,

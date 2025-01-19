@@ -1,6 +1,6 @@
 UndefineClass('PunchingPole')
 DefineClass.PunchingPole = {
-	__parents = { "Building", "RelaxationDeviceComponent" },
+	__parents = { "Building", "OwnedComponent", "RelaxationDeviceComponent" },
 	__generated_by_class = "ModItemBuildingCompositeDef",
 
 
@@ -49,6 +49,7 @@ DefineClass.PunchingPole = {
 	enable_overlay_on_placement = {
 		RoomsOverlay = true,
 	},
+	OwnedComponent = true,
 	RelaxationDeviceComponent = true,
 }
 

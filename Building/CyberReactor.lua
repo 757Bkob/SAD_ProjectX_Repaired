@@ -33,7 +33,6 @@ DefineClass.CyberReactor = {
 	repair_cost = PlaceObj('ConstructionCost', {
 		CarbonNanotubes = 50000,
 	}),
-	deconstruction_output = PlaceObj('ConstructionCost', {}),
 	Health = 500000,
 	MaxHealth = 500000,
 	lock_block_box = box(-1800, -1800, 0, 1800, 1800, 3850),

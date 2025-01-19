@@ -1,6 +1,6 @@
 UndefineClass('PXEyeSculpture')
 DefineClass.PXEyeSculpture = {
-	__parents = { "Building", "DecorationComponent", "RelaxationDeviceComponent" },
+	__parents = { "Building", "DecorationComponent", "OwnedComponent", "RelaxationDeviceComponent" },
 	__generated_by_class = "ModItemBuildingCompositeDef",
 
 
@@ -26,7 +26,6 @@ DefineClass.PXEyeSculpture = {
 	MaxHealth = 300000,
 	RoomPlacement = "outdoors",
 	lock_block_box = box(-600, -1200, 0, 600, 1200, 1750),
-	MaterialColorization = PlaceObj('ColorizationPropSet', nil),
 	access_range = 2400,
 	attack_attraction = 5,
 	prefer_in_buildmenu = true,
@@ -34,6 +33,7 @@ DefineClass.PXEyeSculpture = {
 		RoomsOverlay = true,
 	},
 	DecorationComponent = true,
+	OwnedComponent = true,
 	RelaxationDeviceComponent = true,
 	ownership_class = "Chair",
 }

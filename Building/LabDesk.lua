@@ -1,6 +1,6 @@
 UndefineClass('LabDesk')
 DefineClass.LabDesk = {
-	__parents = { "Building", "MalfunctionOverTimeComponent", "PowerComponent", "ProductionDeviceComponent" },
+	__parents = { "Building", "MalfunctionOverTimeComponent", "OwnedComponent", "PowerComponent", "ProductionDeviceComponent" },
 	__generated_by_class = "ModItemBuildingCompositeDef",
 
 
@@ -37,7 +37,6 @@ DefineClass.LabDesk = {
 		Metal = 10000,
 		ScrapElectronics = 4000,
 	}),
-	deconstruction_output = PlaceObj('ConstructionCost', {}),
 	lock_block_box = box(-600, -300, 0, 600, 300, 1750),
 	apply_res_reqs = false,
 	access_range = 2400,
@@ -46,6 +45,7 @@ DefineClass.LabDesk = {
 		RoomsOverlay = true,
 	},
 	MalfunctionOverTimeComponent = true,
+	OwnedComponent = true,
 	PowerComponent = true,
 	ProductionDeviceComponent = true,
 	LightRadius = 2000,

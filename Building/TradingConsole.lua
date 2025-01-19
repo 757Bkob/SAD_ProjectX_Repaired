@@ -1,6 +1,6 @@
 UndefineClass('TradingConsole')
 DefineClass.TradingConsole = {
-	__parents = { "Building", "MalfunctionOverTimeComponent", "PowerComponent", "ProductionDeviceComponent" },
+	__parents = { "Building", "MalfunctionOverTimeComponent", "OwnedComponent", "PowerComponent", "ProductionDeviceComponent" },
 	__generated_by_class = "ModItemBuildingCompositeDef",
 
 
@@ -38,7 +38,6 @@ DefineClass.TradingConsole = {
 		Metal = 10000,
 		ScrapElectronics = 4000,
 	}),
-	deconstruction_output = PlaceObj('ConstructionCost', {}),
 	Health = 400000,
 	MaxHealth = 400000,
 	can_be_copied = false,
@@ -53,6 +52,7 @@ DefineClass.TradingConsole = {
 		RoomsOverlay = true,
 	},
 	MalfunctionOverTimeComponent = true,
+	OwnedComponent = true,
 	PowerComponent = true,
 	ProductionDeviceComponent = true,
 	LightRadius = 2000,

@@ -42,7 +42,6 @@ DefineClass.AlienCrystalGenerator = {
 		PowerCell = 3000,
 		ScrapElectronics = 10000,
 	}),
-	deconstruction_output = PlaceObj('ConstructionCost', {}),
 	Health = 1200000,
 	MaxHealth = 1200000,
 	damage_reduction = {

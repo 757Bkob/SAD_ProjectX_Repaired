@@ -41,7 +41,6 @@ DefineClass.CyberAirCon = {
 			'room_snap_side_spot', "Heatsource",
 		}),
 	},
-	deconstruction_output = PlaceObj('ConstructionCost', {}),
 	Health = 400000,
 	MaxHealth = 400000,
 	attached_to_wall = true,

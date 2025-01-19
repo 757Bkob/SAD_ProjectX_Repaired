@@ -35,7 +35,6 @@ DefineClass.AlienTurbines = {
 	repair_cost = PlaceObj('ConstructionCost', {
 		CarbonNanotubes = 40000,
 	}),
-	deconstruction_output = PlaceObj('ConstructionCost', {}),
 	Health = 1500000,
 	MaxHealth = 1500000,
 	damage_reduction = {
