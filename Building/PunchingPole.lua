@@ -6,11 +6,11 @@ DefineClass.PunchingPole = {
 
 	object_class = "Building",
 	BuildMenuCategory = "Leisure",
-	display_name = T(263703011987, --[[ModItemBuildingCompositeDef PunchingPole display_name]] "Durable Punching pole"),
-	description = T(458254958107, --[[ModItemBuildingCompositeDef PunchingPole description]] "Used for relaxation. Grants Physical and Combat experience on use."),
+	display_name = T(585434733340, --[[ModItemBuildingCompositeDef PunchingPole display_name]] "Durable Punching pole"),
+	description = T(657449744188, --[[ModItemBuildingCompositeDef PunchingPole description]] "Used for relaxation. Grants Physical and Combat experience on use."),
 	BuildMenuIcon = "UI/Icons/Build Menu/punching_bag",
 	BuildMenuPos = 5010,
-	display_name_pl = T(323237528856, --[[ModItemBuildingCompositeDef PunchingPole display_name_pl]] "Punching poles"),
+	display_name_pl = T(956150631826, --[[ModItemBuildingCompositeDef PunchingPole display_name_pl]] "Punching poles"),
 	entity = "PunchingPole",
 	labels = {
 		"BerserkTargets",

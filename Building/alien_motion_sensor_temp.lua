@@ -5,7 +5,11 @@ DefineClass.alien_motion_sensor_temp = {
 
 
 	object_class = "Building",
-	LockState = "hidden",
+	Prerequisites = {
+		PlaceObj('CheckTech', {
+			Tech = "AlienSensor",
+		}),
+	},
 	BuildMenuCategory = "sub_DefenseDevices",
 	display_name = T(634710997141, --[[ModItemBuildingCompositeDef alien_motion_sensor_temp display_name]] "Fauna Selection Tower"),
 	description = T(409042361539, --[[ModItemBuildingCompositeDef alien_motion_sensor_temp description]] "All these organs next to some special broadcast equipment... I bet we could try and lure a specific species to be in the next attack group with these!"),

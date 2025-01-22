@@ -5,7 +5,6 @@ DefineClass.alien_sensor = {
 
 
 	object_class = "Building",
-	LockState = "hidden",
 	Prerequisites = {
 		PlaceObj('CheckTech', {
 			Tech = "AlienSensor",

@@ -134,7 +134,7 @@ function diminishReturnCheck(classname)
 	print("Chance to succeed: ",reductions,'%')
 	if reductions > roll then
 		print("Override succeeded")
-		return true 
+		return true
 	else
 		print("Override failed!")
 		return false
@@ -188,11 +188,9 @@ end
 
 local function px_full()
 	px_init('ucCehPy')
-	are_prereqs_loaded()
+	CreateRealTimeThread(are_prereqs_loaded())
 	return
 end
 
 OnMsg.LoadGame = px_full
-OnMsg.Start = px_init
 OnMsg.GameStarted = px_full
-OnMsg.NewGame = px_full

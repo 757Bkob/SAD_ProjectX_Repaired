@@ -5,7 +5,11 @@ DefineClass.cyber_motion_sensor_temp = {
 
 
 	object_class = "Building",
-	LockState = "hidden",
+	Prerequisites = {
+		PlaceObj('CheckTech', {
+			Tech = "CyberSensor",
+		}),
+	},
 	BuildMenuCategory = "sub_DefenseDevices",
 	display_name = T(935842762688, --[[ModItemBuildingCompositeDef cyber_motion_sensor_temp display_name]] "Fauna Detection Tower"),
 	description = T(939503605659, --[[ModItemBuildingCompositeDef cyber_motion_sensor_temp description]] "Signal hijacking tower; enabling us to not only detect if an attack is imminent, but we can also try and change the temperament of the animals that are gathering!"),
