@@ -1,6 +1,6 @@
 UndefineClass('GalacticFridgePX')
 DefineClass.GalacticFridgePX = {
-	__parents = { "Building", "MalfunctionOverTimeComponent", "PowerComponent", "ResourceDismantlingComponent", "StorageDepotComponent" },
+	__parents = { "Building", "MalfunctionOverTimeComponent", "OwnedComponent", "PowerComponent", "ResourceDismantlingComponent", "StorageDepotComponent" },
 	__generated_by_class = "ModItemBuildingCompositeDef",
 
 
@@ -62,6 +62,7 @@ DefineClass.GalacticFridgePX = {
 		RoomsOverlay = true,
 	},
 	MalfunctionOverTimeComponent = true,
+	OwnedComponent = true,
 	PowerComponent = true,
 	ResourceDismantlingComponent = true,
 	StorageDepotComponent = true,

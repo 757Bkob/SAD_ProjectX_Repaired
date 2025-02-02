@@ -1,6 +1,6 @@
 UndefineClass('GalacticAnimalFeeder')
 DefineClass.GalacticAnimalFeeder = {
-	__parents = { "AnimalFeeder", "PowerComponent", "StorageDepotComponent", "VisualStorageComponent" },
+	__parents = { "AnimalFeeder", "OwnedComponent", "PowerComponent", "StorageDepotComponent", "VisualStorageComponent" },
 	__generated_by_class = "ModItemBuildingCompositeDef",
 
 
@@ -45,6 +45,7 @@ DefineClass.GalacticAnimalFeeder = {
 	enable_overlay_on_placement = {
 		RoomsOverlay = true,
 	},
+	OwnedComponent = true,
 	PowerComponent = true,
 	StorageDepotComponent = true,
 	VisualStorageComponent = true,

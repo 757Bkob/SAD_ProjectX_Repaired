@@ -43,6 +43,9 @@ local function are_prereqs_loaded()
 		elseif mod.id == 'sad_commonlib' then
 			print("Found commonlib")
 			comlib = true
+		elseif mod.id == '' then
+			print("Someone has beyond stranded as well!")
+			Presets.ActivitySet.Default.Work.Activities.AT_Excavate = true
 		end
 	end
 	if not (ilu and comlib) then
@@ -77,72 +80,136 @@ local function fibCount(no)
   return fib[no]
 end
 
-function droid_cost_calc(count)
-	print("Droid count check, updating repair kits and coins to purchase another one")
-	local count = count or 0
-	local droid_resource_mapping = {
-		{name='Money',scale=500000},
-		{name='EnergyCrystals',scale=100},
-		{name='OrganBox',scale=50},
-	}
-	local drm_index = 1
-	for _, v in ipairs(AllSurvivors) do
-		for _, t in ipairs(v['traits']) do
-			if v['UnitTags']['Robot'] then
-				count = count + 1
-			end
-		end
-	end
-	print("There are ",count," droids fielded")
-	local count = (count+1)
-	while (count>7 and drm_index~=3) do
-		count = count - 7
-		drm_index=drm_index+1
-	end
-	local f_count = fibCount(count)
-	local resource = droid_resource_mapping[drm_index]['name']
-	local amount = f_count * droid_resource_mapping[drm_index]['scale']
-	-- to-do set droid price return resource, amount
-	print("The resource cost is now: ",resource,". And the amount is: ",amount)
-	return resource, amount
+function px_gal_droid_raw(pct, free)
+	return GetPaymentModifiedByPct(gal_hire_cost_calc(free,'Droid'),pct)
 end
 
-function human_cost_calc()
-	print("Calculating how many survivng humans there are, and 	update the costs for good/criminal colonists")
+function px_gal_human_raw(pct,free)
+	return GetPaymentModifiedByPct(gal_hire_cost_calc(free,'Human'),pct)
+end
+
+function gal_hire_cost_calc(no_free,type)
+	local no_free = no_free or 1
+	local type = type or 'Human'
+	--print("counting # of ",type," deployed to get next price")
 	local count = 0
-	local base_price = 250000
-	local premium_mult = 2
-	local criminal_multi = 0.33333333
+	local base_price = 100000 --100,000
+	if IsGameRuleActive('RandomSurvivors') then
+		base_price = base_price * 9 / 10 -- reward players for playing with randomness
+	end
+	local drm_index = 1
 	for _, v in ipairs(AllSurvivors) do
-		if v['UnitTags']['Human'] or v['UnitTags']['android'] then
+		if v['UnitTags']['Robot'] and type == 'Droid' then
+			count = count + 1
+		elseif (v['UnitTags']['Human'] or v['UnitTags']['Android']) and type == 'Human' then
 			count = count + 1
 		end
 	end
-	print("There are ",count," colonists fielded")
-	local f_count = fibCount(count+1)
-	-- to-do set normal / premium / criminal MapVar costs for new hire
+	--print("There are ",count," ",type," fielded")
+	--print("Not counting ",no_free," of them due to reasons!")
+	if count < no_free and no_free >= 0 then
+		return 0 * base_price * const.ResourceScale
+	else
+		count = count - no_free
+	end
+	return fibCount(count+1) * base_price * const.ResourceScale
 end
 
 function diminishReturnCheck(classname)
-	print("diminish return check")
-	print(classname)
+	--print("diminish return check")
+	--print(classname)
 	local roll = InteractionRand(100, "CheckRandom")
-	print("Need to see a reduction above: ",roll)
+	--print("D100 rolled a: ",roll," the tower formula needs to spit out to a higher #!")
 	local no  = MapCount("map", classname)
-	print(no," objects Found!")
+	--print(no," objects Found!")
 	local reductions = (60*no) / (no+4)+15
-	print("Chance to succeed: ",reductions,'%')
+	--print("Tower formula spat out: ",reductions)
 	if reductions > roll then
-		print("Override succeeded")
+		--print("Override succeeded")
 		return true
 	else
-		print("Override failed!")
+		--print("Override failed!")
 		return false
 	end
 end
 
-function TFormat.DroidRepairKits(context_obj)
-    return droid_repair_needed
+function px_droid_repair()
+	local count = 0
+	for _, v in ipairs(AllSurvivors) do
+		if v['UnitTags']['Robot'] then
+			count = count + 1
+		end
+	end
+	return (count+1) * 1000 * 5
+end
+
+-- Based on src/Lua/Human.Lua -> GetSurvivorSpawnPool
+-- Also based on src/Lua/
+function custom_hire_calc(context,skill,tag_sneak)
+	context = context or empty_table
+	sneak_add = sneak_add or false
+	local player = UIPlayer
+	local all_spawn_pool = empty_table
+	local fin_spawn_pool = {}
+	local remove = table.remove
+	local temp_char = nil
+	local possible_skill_level = 0
+	local possible_inclination = ''
+	local mod_dict = false
+	local is_from_px = false
+	local is_droid = false
+	local is_other_modded = false
+	all_spawn_pool = table.keys(CharacterDefs, true)
+	for i = #(all_spawn_pool or ""), 1, -1 do
+		-- remove already spawned survivors from pool
+		if SpawnedSurvivorIds[all_spawn_pool[i]] then
+			remove(all_spawn_pool, i)
+		end 
+	end	
+	for i = #all_spawn_pool, 1, -1 do
+		if skill then
+			possible_skill_level = CharacterDefs[all_spawn_pool[i]]['Skills'][skill] or 1
+			possible_inclination = CharacterDefs[all_spawn_pool[i]]['SkillInclinations'] or 'Not Set'
+			is_droid = CharacterDefs[all_spawn_pool[i]]['UnitTags']['Droid'] or false
+			if possible_skill_level > 4 or possible_inclination == 'Interested' and not is_droid then
+				fin_spawn_pool[#fin_spawn_pool+1] = all_spawn_pool[i]
+			end
+		end
+		if tag_sneak then
+			mod_dict = CharacterDefs[all_spawn_pool[i]]['mod'] or false
+			if mod_dict then
+				if mod_dict['id'] ~= 'ucCehPy' then
+					-- This means there is a modded character without any PX mods
+					if AsyncRand(90) > 100 then
+						print('test')
+					end
+				end
+			end
+		end
+	end
+	print(fin_spawn_pool)
+end
+
+function TFormat.not_enough_droid_repair(context_obj)
+	return FormatResource(Resources["PX_droidRepair"], px_droid_repair())
+end
+
+function TFormat.px_gal_droid(context_obj,pct,free)
+	free = free or 1
+	pct = pct or 100
+	local cost_without_scale = gal_hire_cost_calc(free,'Droid') / const.ResourceScale
+	return StoryBitFormatCost(GetPaymentModifiedByPct(cost_without_scale,pct))
+end
+
+function TFormat.px_gal_human(context_obj,pct,free)
+	pct = pct or 100
+	free = free or 5
+	local cost_without_scale = gal_hire_cost_calc(free,'Droid') / const.ResourceScale
+	return StoryBitFormatCost(GetPaymentModifiedByPct(cost_without_scale,pct))
+end
+
+function TFormat.place_final_if_random(context_obj)
+	if IsGameRuleActive("RandomSurvivors") then return Untranslated(':: <color TextNegative>Final Answer!</color>') else return '' end
 end
 
 function px_set_map_vars()
@@ -156,13 +223,7 @@ function px_set_map_vars()
 		{name="px_droid_tut",init=false},
 		{name="px_black_market_rapport",init=0},
 		{name="px_black_market_rapport",init=0},
-		{name="hire_cost",init=50000},
-		{name="droid_hire_cost",init=100000},
-		{name="droid_hire_resource",init='Money'},
 		{name="droid_repair_needed",init=5},
-		{name="colonist_cost",init=false},
-		{name="colonist_expensive_cost",init=false},
-		{name="colonist_criminal_cost",init=false},
 		{name="animal_override",init=false},
 		{name="animal_override_attempted",init=false},
 		{name="animal_temperament_attempted",init=false},
@@ -172,7 +233,11 @@ function px_set_map_vars()
 	for _, var in ipairs(all_vars) do
 		if MapVarValues[var['name']] == nil then
 			MapVar(var['name'],var['init'])
+			MapVarValues[var['name']] = var['init']
 			print("I added ",var['name'],' to MapVars!')
+		elseif var['init'] and not MapVarValues[var['name']] then -- need to re-initialize
+			print("Found MapVar ",var['name']," in an error state!")
+			MapVarValues[var['name']]= var['init']
 		else
 			print("I did not add ",var['name'])
 		end

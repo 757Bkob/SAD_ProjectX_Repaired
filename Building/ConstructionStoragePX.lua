@@ -1,6 +1,6 @@
 UndefineClass('ConstructionStoragePX')
 DefineClass.ConstructionStoragePX = {
-	__parents = { "Building", "ResourceDismantlingComponent", "StorageDepotComponent" },
+	__parents = { "Building", "OwnedComponent", "ResourceDismantlingComponent", "StorageDepotComponent" },
 	__generated_by_class = "ModItemBuildingCompositeDef",
 
 
@@ -50,6 +50,7 @@ DefineClass.ConstructionStoragePX = {
 	enable_overlay_on_placement = {
 		RoomsOverlay = true,
 	},
+	OwnedComponent = true,
 	ResourceDismantlingComponent = true,
 	StorageDepotComponent = true,
 	ChangeOwnerIcon = "UI/Icons/Infopanels/assign_owner",

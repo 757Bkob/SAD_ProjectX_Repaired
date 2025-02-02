@@ -1,6 +1,6 @@
 UndefineClass('LaboratoryFridgePX')
 DefineClass.LaboratoryFridgePX = {
-	__parents = { "Building", "PowerComponent", "ResourceDismantlingComponent", "StorageDepotComponent" },
+	__parents = { "Building", "OwnedComponent", "PowerComponent", "ResourceDismantlingComponent", "StorageDepotComponent" },
 	__generated_by_class = "ModItemBuildingCompositeDef",
 
 
@@ -57,6 +57,7 @@ DefineClass.LaboratoryFridgePX = {
 	enable_overlay_on_placement = {
 		RoomsOverlay = true,
 	},
+	OwnedComponent = true,
 	PowerComponent = true,
 	ResourceDismantlingComponent = true,
 	StorageDepotComponent = true,

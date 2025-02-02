@@ -1,6 +1,6 @@
 UndefineClass('MiniOrganFridgePX')
 DefineClass.MiniOrganFridgePX = {
-	__parents = { "Building", "PowerComponent", "StorageDepotComponent" },
+	__parents = { "Building", "OwnedComponent", "PowerComponent", "StorageDepotComponent" },
 	__generated_by_class = "ModItemBuildingCompositeDef",
 
 
@@ -58,6 +58,7 @@ DefineClass.MiniOrganFridgePX = {
 	enable_overlay_on_placement = {
 		RoomsOverlay = true,
 	},
+	OwnedComponent = true,
 	PowerComponent = true,
 	StorageDepotComponent = true,
 	ChangeOwnerIcon = "UI/Icons/Infopanels/assign_owner",

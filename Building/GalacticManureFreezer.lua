@@ -1,6 +1,6 @@
 UndefineClass('GalacticManureFreezer')
 DefineClass.GalacticManureFreezer = {
-	__parents = { "Building", "MalfunctionOverTimeComponent", "PowerComponent", "ResourceDismantlingComponent", "StorageDepotComponent" },
+	__parents = { "Building", "MalfunctionOverTimeComponent", "OwnedComponent", "PowerComponent", "ResourceDismantlingComponent", "StorageDepotComponent" },
 	__generated_by_class = "ModItemBuildingCompositeDef",
 
 
@@ -60,6 +60,7 @@ DefineClass.GalacticManureFreezer = {
 		RoomsOverlay = true,
 	},
 	MalfunctionOverTimeComponent = true,
+	OwnedComponent = true,
 	PowerComponent = true,
 	ResourceDismantlingComponent = true,
 	StorageDepotComponent = true,

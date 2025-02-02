@@ -1,6 +1,6 @@
 UndefineClass('PXPiles')
 DefineClass.PXPiles = {
-	__parents = { "StoragePile", "ResourceDismantlingComponent", "StorageDepotComponent", "VisualStorageComponent" },
+	__parents = { "StoragePile", "OwnedComponent", "ResourceDismantlingComponent", "StorageDepotComponent", "VisualStorageComponent" },
 	__generated_by_class = "ModItemBuildingCompositeDef",
 
 
@@ -33,6 +33,7 @@ DefineClass.PXPiles = {
 	enable_overlay_on_placement = {
 		RoomsOverlay = true,
 	},
+	OwnedComponent = true,
 	ResourceDismantlingComponent = true,
 	StorageDepotComponent = true,
 	VisualStorageComponent = true,

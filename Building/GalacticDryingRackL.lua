@@ -1,6 +1,6 @@
 UndefineClass('GalacticDryingRackL')
 DefineClass.GalacticDryingRackL = {
-	__parents = { "Building", "ResourceTransformComponent", "StorageDepotComponent", "VisualStorageComponent" },
+	__parents = { "Building", "OwnedComponent", "ResourceTransformComponent", "StorageDepotComponent", "VisualStorageComponent" },
 	__generated_by_class = "ModItemBuildingCompositeDef",
 
 
@@ -45,6 +45,7 @@ DefineClass.GalacticDryingRackL = {
 		end
 	end,
 	affected_by_disasters = set(),
+	OwnedComponent = true,
 	ResourceTransformComponent = true,
 	StorageDepotComponent = true,
 	VisualStorageComponent = true,
